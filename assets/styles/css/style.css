@@ -11865,6 +11865,9 @@ body {
 .btn {
   padding: 12px 24px;
 }
+.btn-sm, .btn-group-sm > .btn {
+  padding: 8px 18px;
+}
 
 * {
   margin: 0px;
