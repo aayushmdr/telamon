@@ -11900,4 +11900,12 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.metrics-card {
+  transition: 200ms ease-in;
+}
+.metrics-card:hover {
+  transition: 200ms ease-out;
+  border: 1px solid #d3d3d3;
 }/*# sourceMappingURL=style.css.map */
