@@ -3,3 +3,34 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+body {
+    background: $bg-warm;
+    color: $default-text-color;
+}
+
+.hero {
+    &-container {
+        height: 80vh;
+        border-radius: 8px;
+        position: relative;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-image: url('/assets/img/hero-banner.jpg');
+    }
+
+    &-overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.65);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}

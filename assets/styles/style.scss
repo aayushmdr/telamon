@@ -5,4 +5,12 @@
 @import'custom/variables';
 
 
-@import '../bootstrap-5.2.0/scss/bootstrap';
+@import '../vendor/bootstrap-5.3.6/scss/bootstrap.scss';
+@import'custom/fonts';
+@import'custom/navbar';
+@import'custom/sections';
+@import 'custom/background';
+@import'custom/buttons';
+@import'custom/custom';
+@import'custom/footer';
+@import'custom/loader';
