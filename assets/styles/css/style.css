@@ -11876,7 +11876,6 @@ body {
 }
 
 body {
-  background: #fefef9;
   color: #434d56;
 }
 
@@ -11902,10 +11901,26 @@ body {
   flex-direction: column;
 }
 
-.metrics-card {
+.custom-card-metrics {
   transition: 200ms ease-in;
 }
-.metrics-card:hover {
+.custom-card-metrics:hover {
   transition: 200ms ease-out;
   border: 1px solid #d3d3d3;
+}
+.custom-card-services {
+  background-color: var(--bs-primary-bg-subtle);
+  color: #3D52A0;
+  height: 100%;
+  transition: 300ms ease-in;
+}
+.custom-card-services p {
+  color: #434d56;
+}
+.custom-card-services:hover {
+  background: #3D52A0;
+  color: white;
+}
+.custom-card-services:hover p {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
