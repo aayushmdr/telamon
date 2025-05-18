@@ -1,0 +1,24 @@
+.swiper {
+    &-slide {
+        img {
+            width: 100%;
+        }
+    }
+    &-button {
+        &-next,
+        &-prev {
+            background: white;
+            border-radius: 50%;
+            color: $primary !important;
+            width: 28px !important;
+            height: 28px !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &::after {
+                font-size: 12px !important;
+            }
+        }
+    }
+}
