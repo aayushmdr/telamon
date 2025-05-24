@@ -10,11 +10,17 @@ body {
 }
 
 .site-construction-wrapper {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
-    .brand-logo {
-        max-width: 250px;
+    .brand-logo-main {
+        max-width: 200px;
+    }
+
+    .custom-animation {
+        max-width: 650px;
     }
 }
