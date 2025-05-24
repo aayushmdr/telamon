@@ -24,4 +24,4 @@ jobs:
         run: |
           rsync -avz --delete \
             -e "ssh -p ${{ secrets.CPANEL_PORT }}" \
-            ./ ${{ secrets.CPANEL_USERNAME }}@${{ secrets.CPANEL_HOST }}:/home/${{ secrets.CPANEL_USERNAME }}/public_html/telamon/
+            ./ ${{ secrets.CPANEL_USERNAME }}@${{ secrets.CPANEL_HOST }}:/home/${{ secrets.CPANEL_USERNAME }}/public_html/
