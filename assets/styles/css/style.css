@@ -11875,6 +11875,25 @@ body {
   box-sizing: border-box;
 }
 
+.brand-logo-navbar {
+  max-height: 56px;
+  width: auto;
+}
+@media (max-width: 768px) {
+  .brand-logo-navbar {
+    max-height: 36px;
+  }
+}
+.brand-logo-footer {
+  max-height: 94px;
+  width: auto;
+}
+@media (max-width: 768px) {
+  .brand-logo-footer {
+    max-height: 64px;
+  }
+}
+
 body {
   color: #434d56;
 }

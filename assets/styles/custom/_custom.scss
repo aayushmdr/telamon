@@ -4,6 +4,27 @@
     box-sizing: border-box;
 }
 
+.brand-logo {
+    &-navbar {
+        max-height: 56px;
+        width: auto;
+
+        @media (max-width: 768px) {
+            max-height: 36px;
+        }
+    }
+
+    &-footer {
+        max-height: 94px;
+        width: auto;
+
+        @media (max-width: 768px) {
+            max-height: 64px;
+        }
+    }
+}
+
+
 body {
     //background: $bg-warm;
     color: $default-text-color;
@@ -52,9 +73,11 @@ body {
         color: $primary;
         height: 100%;
         transition: 300ms ease-in;
-        p{
+
+        p {
             color: $default-text-color;
         }
+
         &:hover {
             background: $primary;
             color: white;
