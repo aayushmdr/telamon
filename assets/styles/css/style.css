@@ -11944,6 +11944,10 @@ body {
   color: white;
 }
 
+.custom-swiper {
+  height: 600px;
+}
+
 .swiper-slide img {
   width: 100%;
 }
