@@ -10,10 +10,21 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   autoplay: {
-   delay: 4000,
+   delay: 2000,
+   pauseOnMouseEnter: true
  },
- slidesPerView: 1,
- spaceBetween: 0,
+ spaceBetween: 20,
+ breakpoints: {
+    // when window width is >= 0px
+    0: {
+      slidesPerView: 1
+    },
+    // when window width is >= 768px (e.g., tablets and up)
+    992: {
+      slidesPerView: 2
+    }
+  },
+
 //  effect: 'fade',
 //   fadeEffect: {
 //     crossFade: true
@@ -25,3 +36,4 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+

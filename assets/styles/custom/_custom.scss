@@ -93,5 +93,9 @@ body {
 }
 
 .custom-swiper {
-    height: 750px;
+    height: 400px;
+
+    @media (max-width: 768px) {
+            height: 600px;
+        }
 }
