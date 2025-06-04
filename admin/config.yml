@@ -1,0 +1,48 @@
+backend:
+  name: git-gateway
+  branch: main
+  local_backend: true
+
+
+# backend:
+#   name: test-repo
+#   local_backend: true
+
+media_folder: "assets/img"
+public_folder: "/assets/img"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/homepage.md"
+        label: "Homepage"
+        name: "homepage"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+
+
+# backend:
+#   name: github
+#   repo: aayushmdr/telamon
+#   branch: decap-cms-trial
+#   base_url: https://telamondesignconsult.com
+#   auth_endpoint: api/auth.php
+#   app_id: Ov23linkdRxzGUuu1rMa
+
+
+# media_folder: "assets/img"
+# public_folder: "/assets/img"
+
+# collections:
+#   - name: "homepage"
+#     label: "Homepage"
+#     files:
+#       - file: "content/homepage.md"
+#         label: "Hero Section"
+#         name: "hero"
+#         fields:
+#           - { label: "Headline", name: "headline", widget: "string" }
+#           - { label: "Subtext", name: "subtext", widget: "text" }
