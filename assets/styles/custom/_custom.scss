@@ -60,11 +60,13 @@ body {
 
 .custom-card {
     &-metrics {
+        height: 100%;
         transition: 200ms ease-in;
 
         &:hover {
             transition: 200ms ease-out;
-            border: 1px solid #d3d3d3;
+            background: var(--bs-primary-bg-subtle);
+            color: $primary;
         }
     }
 
