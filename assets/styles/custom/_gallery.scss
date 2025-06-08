@@ -1,0 +1,17 @@
+.gallery {
+    &-filter-buttons {
+        .mixitup-control-active {
+            background: $primary;
+            color: #ffffff;
+            border: none;
+        }
+    }
+    &-grid {
+        .gallery-item {
+            img {
+                height: 350px;
+                object-fit: cover;
+            }
+        }
+    }
+}

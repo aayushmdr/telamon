@@ -12030,4 +12030,14 @@ body {
 
 .carousel-indicators .active {
   opacity: 1;
+}
+
+.gallery-filter-buttons .mixitup-control-active {
+  background: #324a8f;
+  color: #ffffff;
+  border: none;
+}
+.gallery-grid .gallery-item img {
+  height: 350px;
+  object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
