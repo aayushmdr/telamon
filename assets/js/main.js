@@ -14,14 +14,22 @@ const swiper = new Swiper('.swiper', {
    pauseOnMouseEnter: true
  },
  spaceBetween: 20,
+ grid: {
+    rows: 1, // default
+    fill: 'row',
+  },
  breakpoints: {
     // when window width is >= 0px
     0: {
-      slidesPerView: 1
+      slidesPerView: 1,
+      rows: 1
     },
     // when window width is >= 768px (e.g., tablets and up)
     992: {
-      slidesPerView: 2
+      slidesPerView: 2,
+      grid: {
+        rows: 2,
+      },
     }
   },
 
