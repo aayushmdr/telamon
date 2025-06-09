@@ -238,16 +238,16 @@
                                     alt="" class="img-fluid w-100 h-100 object-fit-cover rounded-1" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="./assets/img/gallery/interior design/bafal apartment/001interior.jpg"
-                                    alt="" class="img-fluid w-100 h-100 object-fit-cover rounded-1" />
+                                <img src="./assets/img/gallery/interior design/bafal apartment/001interior.jpg" alt=""
+                                    class="img-fluid w-100 h-100 object-fit-cover rounded-1" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="./assets/img/gallery/mix_use/@bafal/bafal04.png"
-                                    alt="" class="img-fluid w-100 h-100 object-fit-cover rounded-1" />
+                                <img src="./assets/img/gallery/mix_use/@bafal/bafal04.png" alt=""
+                                    class="img-fluid w-100 h-100 object-fit-cover rounded-1" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="./assets/img/gallery/dining display.png"
-                                    alt="" class="img-fluid w-100 h-100 object-fit-cover rounded-1" />
+                                <img src="./assets/img/gallery/dining display.png" alt=""
+                                    class="img-fluid w-100 h-100 object-fit-cover rounded-1" />
                             </div>
                         </div>
 
@@ -282,7 +282,18 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <form action="#" method="POST">
+
+                    <div id="form-alert" class="alert alert-success alert-dismissible fade d-none mt-3" role="alert">
+                        <strong>Message sent!</strong> We’ll get back to you soon.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+
+                    <form id="contact-form" action="https://formsubmit.co/e37624adfb7356686eed8c00eb09f4bc"
+                        method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> -->
+                        <input type="hidden" name="_subject" value="New Inquiry from Telamon Website">
+
                         <div class="row mb-3">
                             <div class="col-md-6 mb-3 mb-lg-0">
                                 <label for="name" class="form-label">Your Name</label>
@@ -305,10 +316,15 @@
                             <label for="message" class="form-label">Message</label>
                             <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                         </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary px-4">Send Message</button>
-                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-3">
+                                <button type="submit" class="btn btn-primary d-flex align-items-center" id="submit-btn">Send Message
+                                    <div id="form-spinner" class="spinner-border spinner-border-sm ms-2 text-light d-none" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                </button>
+                            </div>
                     </form>
+
                 </div>
             </div>
         </div>
@@ -476,7 +492,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
         integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
         crossorigin="anonymous"></script>
-
+    <script src="assets/js/form.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
