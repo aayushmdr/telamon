@@ -3,4 +3,12 @@
     &-sm {
         padding: 8px 18px;
     }
+    &-light {
+        color: $primary;
+
+        &:hover {
+            background: var(--bs-primary-bg-subtle);
+            color: $primary;
+        }
+    }
 }

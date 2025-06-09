@@ -11868,6 +11868,13 @@ body {
 .btn-sm, .btn-group-sm > .btn {
   padding: 8px 18px;
 }
+.btn-light {
+  color: #324a8f;
+}
+.btn-light:hover {
+  background: var(--bs-primary-bg-subtle);
+  color: #324a8f;
+}
 
 * {
   margin: 0px;
