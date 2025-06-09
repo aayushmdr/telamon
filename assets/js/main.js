@@ -8,7 +8,7 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  loop: false,
   autoplay: {
    delay: 2000,
    pauseOnMouseEnter: true
