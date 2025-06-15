@@ -11981,6 +11981,10 @@ body {
   }
 }
 
+body.loading {
+  overflow: hidden;
+}
+
 #loader {
   position: fixed;
   top: 0;

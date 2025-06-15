@@ -46,24 +46,24 @@ const swiper = new Swiper('.swiper', {
 });
 
 // Loader JS
-window.addEventListener('load', function () {
+  document.body.classList.add('loading'); // Disable scroll at start
+
+  window.addEventListener('load', function () {
     const loader = document.getElementById('loader');
     const logo = loader.querySelector('.loader-logo');
 
-    // Remove grayscale to show blue fill
-    logo.style.filter = 'none';
+    logo.style.filter = 'none'; // Remove grayscale for color fill
 
-    // Stop pulse after 1 pulse cycle (1.5s), then fade out loader
     setTimeout(() => {
-      logo.style.animation = 'none';  // stop pulse
+      logo.style.animation = 'none'; // Stop pulse
 
-      // Fade out loader
       loader.style.opacity = '0';
       loader.style.transition = 'opacity 0.5s ease';
 
       setTimeout(() => {
         loader.style.display = 'none';
+        document.body.classList.remove('loading'); // Re-enable scroll
       }, 500);
 
-    }, 1500);
+    }, 1000); // Reduce this delay if loader feels slow
   });
