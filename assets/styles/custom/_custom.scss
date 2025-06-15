@@ -28,41 +28,55 @@
 body {
     //background: $bg-warm;
     color: $default-text-color;
+
 }
 
-.hero {
-    &-container {
-        height: 80vh;
-        border-radius: 8px;
-        position: relative;
-        background-size: cover;
-        background-position: 50% 50%;
-        background-image: url('../../../assets/img/gallery/residential/amita03.png');
-        //background-image: url('/assets/img/gallery/residence/@dholahity 08/madan\ ji\ 0805.png');
-        //background-image: url("https://images.unsplash.com/photo-1582045253062-f63cfbd45bcb?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+.hero-container {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #000;
+    background-image: url('../../../assets/img/gallery/residential/amita03.png');
+    background-size: cover;
+    background-position: center;
 
-        &.contact-page {
-            height: 30vh;
-            background-image: url("https://images.unsplash.com/photo-1582045253062-f63cfbd45bcb?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    &.contact-page {
+        height: 30vh;
+        background-image: url("https://images.unsplash.com/photo-1582045253062-f63cfbd45bcb?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 
-        }
     }
 
-    &-overlay {
+
+    .hero-video {
         position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        object-fit: cover;
+        pointer-events: none;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        z-index: 1;
         height: 100%;
         width: 100%;
         top: 0;
         left: 0;
-        border-radius: 8px;
-        background: rgba(0, 0, 0, 0.65);
+        background: rgba(0, 0, 0, 0.65); // dark overlay
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
-
 }
+
 
 
 .custom-card {
@@ -103,6 +117,6 @@ body {
     height: 800px;
 
     @media (max-width: 768px) {
-            height: 600px;
-        }
+        height: 600px;
+    }
 }
