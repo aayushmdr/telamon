@@ -45,3 +45,25 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+// Loader JS
+window.addEventListener('load', function () {
+    const loader = document.getElementById('loader');
+    const logo = loader.querySelector('.loader-logo');
+
+    // Remove grayscale to show blue fill
+    logo.style.filter = 'none';
+
+    // Stop pulse after 1 pulse cycle (1.5s), then fade out loader
+    setTimeout(() => {
+      logo.style.animation = 'none';  // stop pulse
+
+      // Fade out loader
+      loader.style.opacity = '0';
+      loader.style.transition = 'opacity 0.5s ease';
+
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 500);
+
+    }, 1500);
+  });
