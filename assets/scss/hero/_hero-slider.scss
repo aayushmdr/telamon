@@ -37,12 +37,12 @@
     z-index: 9;
     & .subtitle {
         font-weight: 400;
-        font-size: 24px;
+        font-size: 18px;
         line-height: 1;
 
         display: block;
 
-        margin-bottom: 60px;
+        margin-bottom: 32px;
 
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -64,24 +64,24 @@
         }
     }
     & .title {
-        font-size: 130px;
+        font-size: 48px;
         line-height: 1;
         font-weight: 500;
         color: $white;
 
-        margin-bottom: 50px;
+        margin-bottom: 32px;
 
         letter-spacing: -0.25px;
         text-transform: capitalize;
 
         @media #{$laptop-device, $desktop-device} {
-            font-size: 95px;
+            font-size: 48px;
         }
         @media #{$tablet-device} {
-            font-size: 80px;
+            font-size: 48px;
         }
         @media #{$large-mobile} {
-            font-size: 70px;
+            font-size: 48px;
             margin-bottom: 40px;
         }
         @media #{$extra-small-mobile} {
@@ -95,7 +95,7 @@
         color: $white;
 
         max-width: 625px;
-        margin-bottom: 53px;
+        margin-bottom: 24px;
         @media #{$tablet-device} {
             font-size: 16px;
             margin-bottom: 40px;
