@@ -49,6 +49,10 @@
         align-items: center;
         padding: 20px;
         margin-bottom: 40px;
+
+        .logo-mobile {
+            max-width: 180px;
+        }
         
     }
     & .offcanvas-btn-close{

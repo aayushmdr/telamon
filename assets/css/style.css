@@ -16996,6 +16996,9 @@ ul li {
   padding: 20px;
   margin-bottom: 40px;
 }
+.mobile-menu-inner .mobile-menu-inner-top .logo-mobile {
+  max-width: 180px;
+}
 .mobile-menu-inner .offcanvas-btn-close {
   font-size: 40px;
   color: #000000;
@@ -18682,16 +18685,17 @@ ul li {
 /*  06. Footer CSS
 /*----------------------------------------*/
 .footer-logo {
-  margin-bottom: 90px;
+  max-width: 250px;
+  margin-bottom: 48px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer-logo {
-    margin-bottom: 76px;
+    margin-bottom: 54px;
   }
 }
 @media only screen and (max-width: 767px) {
   .footer-logo {
-    margin-bottom: 56px;
+    margin-bottom: 48px;
   }
 }
 
@@ -18741,7 +18745,7 @@ ul li {
   font-weight: 400;
   font-size: 14px;
   color: #666666;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 .contact-info a {
   font-family: "Rubik", sans-serif;
@@ -18754,16 +18758,16 @@ ul li {
 }
 
 .footer-social-icons {
-  margin-bottom: 90px;
+  margin-bottom: 48px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer-social-icons {
-    margin-bottom: 64px;
+    margin-bottom: 54px;
   }
 }
 @media only screen and (max-width: 767px) {
   .footer-social-icons {
-    margin-bottom: 46px;
+    margin-bottom: 32px;
   }
 }
 .footer-social-icons li {
@@ -18779,7 +18783,7 @@ ul li {
 .copyright {
   font-size: 14px;
   color: #999999;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 .copyright span {
   color: #000000;
