@@ -3,6 +3,14 @@
 ====================*/
 .history-image {
     max-width: 350px;
+    max-height: 650px;
+
+    @media #{$large-mobile} {
+            max-height: 550px;;
+        }
+        @media #{$small-mobile} {
+            max-height: 500px;
+        }
 }
 
 .history-wrapper {

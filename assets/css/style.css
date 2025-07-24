@@ -16176,6 +16176,17 @@ ul li {
 ====================*/
 .history-image {
   max-width: 350px;
+  max-height: 650px;
+}
+@media only screen and (max-width: 767px) {
+  .history-image {
+    max-height: 550px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .history-image {
+    max-height: 500px;
+  }
 }
 
 .history-wrapper {
