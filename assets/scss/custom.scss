@@ -8,13 +8,13 @@
 
         &:hover {
             transition: 200ms ease-out;
-            background: var(--bs-primary-bg-subtle);
+            background: $custom-bg-light;
             color: var(--bs-primary);
         }
     }
 
     &-services {
-        background-color: var(--bs-primary-bg-subtle);
+        background-color: $custom-bg-light;
         color: var(--bs-primary);
         height: 100%;
         transition: 300ms ease-in;
@@ -33,4 +33,8 @@
         }
     }
 
+}
+
+.custom-bg-light {
+    background-color: $custom-bg-light;
 }

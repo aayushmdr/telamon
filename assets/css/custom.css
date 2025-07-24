@@ -4,11 +4,11 @@
 }
 .custom-card-metrics:hover {
   transition: 200ms ease-out;
-  background: var(--bs-primary-bg-subtle);
+  background: #D6Dbe9;
   color: var(--bs-primary);
 }
 .custom-card-services {
-  background-color: var(--bs-primary-bg-subtle);
+  background-color: #D6Dbe9;
   color: var(--bs-primary);
   height: 100%;
   transition: 300ms ease-in;
@@ -22,4 +22,8 @@
 }
 .custom-card-services:hover p {
   color: white;
+}
+
+.custom-bg-light {
+  background-color: #D6Dbe9;
 }/*# sourceMappingURL=custom.css.map */
