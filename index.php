@@ -1,3 +1,5 @@
+<?php require_once( 'couch/cms.php' ); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -766,3 +768,5 @@
 </body>
 
 </html>
+
+<?php COUCH::invoke(); ?>
