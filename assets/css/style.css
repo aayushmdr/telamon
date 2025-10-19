@@ -17197,6 +17197,7 @@ ul li {
 }
 .project-masonry-section .messonry-button .port-filter:hover, .project-masonry-section .messonry-button .port-filter.is-checked {
   color: #324a8f;
+  text-decoration: underline;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
   .project-masonry-section .messonry-button .port-filter {

@@ -25,6 +25,7 @@
 
             &:hover, &.is-checked {
                 color: $primary;
+                text-decoration: underline;
             }
 
             @media #{$tablet-device, $large-mobile} {
