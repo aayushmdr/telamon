@@ -34,16 +34,23 @@
     above, a recipient may use your version of this file under either the CPAL or the
     CCCL.
     */
+        
+    // Prevent deprecated E_STRICT usage on PHP 8+
+    if (!defined('E_STRICT')) {
+        define('E_STRICT', 0);
+    }
 
-    if( defined('E_STRICT') ){
-        error_reporting(E_ALL & ~(E_NOTICE | E_STRICT | E_WARNING | E_DEPRECATED)); // Report all errors except notices and strict standard warnings
+    if (version_compare(PHP_VERSION, '8.0.0', '>=')) {
+        // For PHP 8 and above, do not use E_STRICT since it is deprecated
+        error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_WARNING);
+    } else {
+        // For PHP < 8, include E_STRICT as before
+        error_reporting(E_ALL & ~(E_NOTICE | E_STRICT | E_WARNING | E_DEPRECATED));
     }
-    else{
-        error_reporting(E_ALL & ~E_NOTICE); // Report all errors except notices
-    }
-    // Since PHP 5.1.0 every call to a date/time function generates a E_NOTICE if the timezone isn't valid,
-    if( !ini_get('date.timezone') || !date_default_timezone_set(ini_get('date.timezone')) ){
-        date_default_timezone_set( "America/New_York" );
+
+    // Set default timezone if not set or invalid
+    if (!ini_get('date.timezone') || !date_default_timezone_set(ini_get('date.timezone'))) {
+        date_default_timezone_set("Asia/Kathmandu");
     }
 
 
