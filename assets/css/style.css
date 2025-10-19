@@ -15027,6 +15027,36 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.custom-card-metrics {
+  height: 100%;
+  transition: 200ms ease-in;
+}
+.custom-card-metrics:hover {
+  transition: 200ms ease-out;
+  background: #D6Dbe9;
+  color: var(--bs-primary);
+}
+.custom-card-services {
+  background-color: #D6Dbe9;
+  color: var(--bs-primary);
+  height: 100%;
+  transition: 300ms ease-in;
+}
+.custom-card-services p {
+  color: #434d56;
+}
+.custom-card-services:hover {
+  background: var(--bs-primary);
+  color: white;
+}
+.custom-card-services:hover p {
+  color: white;
+}
+
+.custom-bg-light {
+  background-color: #D6Dbe9;
+}
+
 /*----------------------------------------*/
 /*  01. Template default CSS
 /*----------------------------------------*/
@@ -16498,7 +16528,6 @@ ul li {
   padding: 15px 0 5px 0;
   text-transform: uppercase;
   text-align: end;
-  margin-bottom: 50px;
 }
 @media only screen and (max-width: 767px) {
   .all-project-btn {
