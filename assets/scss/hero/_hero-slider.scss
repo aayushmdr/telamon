@@ -8,13 +8,13 @@
     height: 100vh;
 
     @media #{$tablet-device} {
-        height: 800px;
+        height: 90vh;
     }
     @media #{$large-mobile} {
-        height: 700px;
+        height: 90vh;
     }
     @media #{$extra-small-mobile} {
-        height: 590px;
+        height: 100vh;
     }
 }
 .hero-slide-bg {
@@ -33,7 +33,8 @@
     }
 }
 .hero-slide-content {
-    position: relative;
+    position: absolute;
+    bottom: 100px;
     z-index: 9;
     & .subtitle {
         font-weight: 400;
@@ -57,10 +58,11 @@
             margin-bottom: 20px;
         }
         @media #{$large-mobile} {
-            font-size: 18px;
+            font-size: 12px;
             margin-bottom: 20px;
         }
         @media #{$extra-small-mobile} {
+            font-size: 12px;
         }
     }
     & .title {
@@ -81,11 +83,12 @@
             font-size: 48px;
         }
         @media #{$large-mobile} {
-            font-size: 48px;
-            margin-bottom: 40px;
+            font-size: 42px;
+            margin-bottom: 24px;
         }
         @media #{$extra-small-mobile} {
-            font-size: 50px;
+            font-size: 32px;
+            margin-bottom: 24px;
         }
     }
     & p {
