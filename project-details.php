@@ -1,12 +1,14 @@
+<?php require_once( 'couch/cms.php' ); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gothic - Architecture Bootstrap 5 HTML Template</title>
+    <title>TDC | Project Details</title>
     <!-- Favicons -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
 
 
     <!-- Vendor CSS (Icon Font) -->
@@ -61,7 +63,7 @@
                             <!-- Header Logo Start -->
                             <div class="header-logo">
                                 <a href="index.php">
-                                    <img class="fit-image" src="assets/images/logo/logo-black.png" alt="Header Logo">
+                                    <img class="fit-image" src="assets/img/logo/telamon-logo-blue.webp" alt="Header Logo">
                                 </a>
                             </div>
                             <!-- Header Logo End -->
@@ -80,38 +82,19 @@
                                             <a href="index.php">Home</a>
                                         </li>
                                         <li>
-                                            <a class="active" href="#">Works</a>
-                                            <ul class="submenu">
-                                                <li><a href="project.php">Project</a></li>
-                                                <li><a href="project-details.html">Project Details</a></li>
-                                            </ul>
+                                            <a class="" href="project.php">Gallery</a>
                                         </li>
                                         <li>
-                                            <a href="#">News</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                            </ul>
+                                            <a href="about.html">About Us</a>
                                         </li>
                                         <li>
-                                            <a href="about.html">About</a>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html">Contact</a>
+                                            <a href="contact.html">Contact Us</a>
                                         </li>
                                     </ul>
                                 </nav>
                                 <!-- Main Menu End -->
 
-                                <!-- Language Start -->
-                                <div class="language d-md-none d-lg-flex">
-                                    <a href="#">Eng</a>
-                                    <a href="#"> <span>Fra</span></a>
-                                </div>
-                                <!-- Language End -->
-
                             </div>
-                            <!-- Main Menu Language Wrapper End -->
 
                         </div>
 
@@ -145,7 +128,7 @@
 
                     <!-- Mobile Menu Logo Start  -->
                     <div class="logo-mobile">
-                        <img src="assets/images/logo/logo-black.png" alt="Logo">
+                        <img src="assets/img/logo/telamon-logo-blue.webp" alt="Logo" class="img-fluid">
                     </div>
                     <!-- Mobile Menu Logo End -->
 
@@ -166,18 +149,7 @@
                                 <a href="index.php">Home</a>
                             </li>
                             <li class="has-children">
-                                <a href="#">Works <i class="icofont-rounded-down" aria-hidden="true"></i></a>
-                                <ul class="dropdown">
-                                    <li><a href="project.php">Project</a></li>
-                                    <li><a href="project-details.html">Project Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-children">
-                                <a href="#">News <i class="icofont-rounded-down" aria-hidden="true"></i></a>
-                                <ul class="dropdown">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                </ul>
+                                <a href="project.php">Gallery</a>
                             </li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
@@ -349,38 +321,40 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <!-- Footer Logo Start -->
-                    <div class="footer-logo">
-                        <a href="index.php"><img src="assets/images/logo/logo-black.png" alt="Logo Black" /></a>
+                    <div class="footer-logo mx-auto">
+                        <a href="index.php"><img src="assets/img/logo/telamon-logo-blue.webp" alt="Logo Black"
+                                class="img-fluid" /></a>
                     </div>
                     <!-- Footer Logo End -->
 
                     <!-- Footer Nav Start -->
                     <ul class="footer-nav mb-n3">
                         <li class="mb-3"><a href="index.php">Home</a></li>
-                        <li class="mb-3"><a href="project.php">Works</a></li>
-                        <li class="mb-3"><a href="blog.html">News</a></li>
-                        <li class="mb-3"><a href="about.html">About</a></li>
-                        <li class="mb-3"><a href="contact.html">Contact</a></li>
+                        <li class="mb-3"><a href="project.php">Gallery</a></li>
+                        <li class="mb-3"><a href="about.html">About us</a></li>
+                        <li class="mb-3"><a href="contact.html">Contact us</a></li>
                     </ul>
                     <!-- Footer Nav End -->
 
                     <!-- Contact Info Start -->
-                    <div class="contact-info">AB Road XX, AB Floor, New York, AA 123456 <br> <a href="tel:+012-345-6789-00">(+012) 345-6789-00</a> <br> <a href="mailto:hello@consulte.co">hello@consulte.co</a></div>
+                    <div class="contact-info">24 Daftar Marg<br> Nhusal-23, Kathmandu, Nepal <br> <a
+                            href="tel:+977 9841676764">+977 9841676764</a> <br> <a
+                            href="mailto:telamondesign.info@gmail.com">telamondesign.info@gmail.com</a></div>
                     <!-- Contact Info End -->
 
                     <!-- Footer Social Icons Start -->
                     <ul class="footer-social-icons social-media-link justify-content-center">
-                        <li><a href="#" class="icofont-facebook"></a></li>
-                        <li><a href="#" class="icofont-twitter"></a></li>
-                        <li><a href="#" class="icofont-google-plus"></a></li>
-                        <li><a href="#" class="icofont-linkedin"></a></li>
+                        <li><a href="https://www.facebook.com/telamon.dc/" class="icofont-facebook"></a></li>
+                        <li><a href="https://www.youtube.com/@TDCinfo" class="icofont-youtube-play"></a></li>
+                        <li><a href="#" class="icofont-instagram"></a></li>
+                        <!-- <li><a href="#" class="icofont-linkedin"></a></li>
                         <li><a href="#" class="icofont-rss"></a></li>
-                        <li><a href="#" class="icofont-dribbble"></a></li>
+                        <li><a href="#" class="icofont-dribbble"></a></li> -->
                     </ul>
                     <!-- Footer Social Icons End -->
 
                     <!-- Copyright Start -->
-                    <div class="copyright">© 2021 <span>GOTHIC</span> Made with <i class="icofont-heart-alt text-danger" aria-hidden="true"></i> by <a href="https://hasthemes.com/">HasThemes</a></div>
+                    <div class="copyright">© 2025 <span>Telamon Design Consult</span></div>
                     <!-- Copyright End -->
                 </div>
             </div>
@@ -433,3 +407,5 @@
 </body>
 
 </html>
+
+<?php COUCH::invoke(); ?>
