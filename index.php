@@ -2,15 +2,21 @@
 
 <cms:template title='Homepage Content' clonable='0' icon='home'>
     <cms:repeatable name='hero_slides' label='Hero Slideshow Content'>
-        <cms:editable name='slide_image' label='Slide Background Image' desc='The main background image for this slide (1920x1080 recommended)' type='image' show_preview='1' preview_height='100' default_value='assets/img/hero-banner.jpg' />
-        <cms:editable name='slide_subtitle' label='Slide Subtitle' desc='e.g., Residential Design' type='text' default_value='Residential Design' />
-        <cms:editable name='slide_title' label='Slide Header Title' type='text' default_value='Default Title.'/>
-        <cms:editable name='slide_paragraph' label='Slide Paragraph Text' type='textarea' default_value='Contact your administrator to change this.' />
-        <cms:editable name='slide_contact_link' label='Contact Button Link URL' type='text' default_value='contact.html'/>
+        <cms:editable name='slide_image' label='Slide Background Image'
+            desc='The main background image for this slide (1920x1080 recommended)' type='image' show_preview='1'
+            preview_height='100' default_value='assets/img/hero-banner.jpg' />
+        <cms:editable name='slide_subtitle' label='Slide Subtitle' desc='e.g., Residential Design' type='text'
+            default_value='Residential Design' />
+        <cms:editable name='slide_title' label='Slide Header Title' type='text' default_value='Default Title.' />
+        <cms:editable name='slide_paragraph' label='Slide Paragraph Text' type='textarea'
+            default_value='Contact your administrator to change this.' />
+        <cms:editable name='slide_contact_link' label='Contact Button Link URL' type='text'
+            default_value='contact.html' />
     </cms:repeatable>
 
-     <cms:repeatable name='lower_slideshow' label='Lower Content Slideshow Items'>
-        <cms:editable name='lower_slide_image' label='Slide Image' type='image' show_preview='1' preview_height='80' default_value='assets/img/hero-banner.jpg' />
+    <cms:repeatable name='lower_slideshow' label='Lower Content Slideshow Items'>
+        <cms:editable name='lower_slide_image' label='Slide Image' type='image' show_preview='1' preview_height='80'
+            default_value='assets/img/hero-banner.jpg' />
         <cms:editable name='lower_slide_text' label='Slide Title' type='text' default_value='Default Title' />
         <cms:editable name='lower_slide_tag' label='Slide Tag' type='text' default_value='Default subtitle' />
     </cms:repeatable>
@@ -206,32 +212,36 @@
         <!-- Hero Slider Start -->
         <div class="hero-slider">
             <div class="swiper-container">
-               <div class="swiper-wrapper">
+                <div class="swiper-wrapper">
 
-    <cms:show_repeatable 'hero_slides'> 
-        
-        <div class="hero-slide-item swiper-slide">
+                    <cms:show_repeatable 'hero_slides'>
 
-            <div class="hero-slide-bg">
-                <img src="<cms:show slide_image />" alt="Slider Image" /> 
-            </div>
-            <div class="container">
-                <div class="hero-slide-content">
-                    
-                    <h4 class="subtitle"><cms:show slide_subtitle /></h4> 
-                    
-                    <h3 class="title">
-                        <cms:show slide_title />
-                    </h3>
-                    
-                    <p><cms:show slide_paragraph /></p> 
-                    
-                    <a href="<cms:show slide_contact_link />" class="btn btn-light">Contact Us</a> 
+                        <div class="hero-slide-item swiper-slide">
+
+                            <div class="hero-slide-bg">
+                                <img src="<cms:show slide_image />" alt="Slider Image" />
+                            </div>
+                            <div class="container">
+                                <div class="hero-slide-content">
+
+                                    <h4 class="subtitle">
+                                        <cms:show slide_subtitle />
+                                    </h4>
+
+                                    <h3 class="title">
+                                        <cms:show slide_title />
+                                    </h3>
+
+                                    <p>
+                                        <cms:show slide_paragraph />
+                                    </p>
+
+                                    <a href="<cms:show slide_contact_link />" class="btn btn-light">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </cms:show_repeatable>
                 </div>
-            </div>
-            </div>
-    </cms:show_repeatable>
-    </div>
 
                 <!-- Swiper Pagination Start -->
                 <div class="swiper-pagination d-md-none"></div>
@@ -322,7 +332,8 @@
                                 <h5 class="title">
                                     <a href="project-details.html">End-to-End Solutions</a>
                                 </h5>
-                                <p>From concept to completion, our team handles every detail with craftsmanship and care.</p>
+                                <p>From concept to completion, our team handles every detail with craftsmanship and
+                                    care.</p>
                                 <div class="icon-link-bottom">
                                     <i class="icon icofont-building-alt"></i>
                                 </div>
@@ -353,7 +364,8 @@
                                 <h5 class="title">
                                     <a href="project-details.html">Client-Centered Approach</a>
                                 </h5>
-                                <p>We collaborate closely with you, translating your vision into meaningful, practical spaces.</p>
+                                <p>We collaborate closely with you, translating your vision into meaningful, practical
+                                    spaces.</p>
                                 <div class="icon-link-bottom">
                                     <i class="icon icofont-user-suited"></i>
                                 </div>
@@ -367,7 +379,8 @@
                                 <h5 class="title">
                                     <a href="project-details.html">Sustainable Innovations</a>
                                 </h5>
-                                <p>Our designs embrace sustainability, blending modern technologies with responsible building practices.</p>
+                                <p>Our designs embrace sustainability, blending modern technologies with responsible
+                                    building practices.</p>
                                 <div class="icon-link-bottom">
                                     <i class="icon icofont-earth"></i>
                                 </div>
@@ -470,22 +483,27 @@
                             <div class="swiper-wrapper">
 
                                 <cms:show_repeatable 'lower_slideshow'>
-                                    
+
                                     <div class="swiper-slide">
-                                        
+
                                         <div class="single-project-slide">
                                             <div class="thumb">
-                                                <img class="fit-image" src="<cms:show lower_slide_image />" alt="Slide Image" /> 
+                                                <img class="fit-image" src="<cms:show lower_slide_image />"
+                                                    alt="Slide Image" />
                                             </div>
                                             <div class="content">
-                                                <h4 class="subtitle"><cms:show lower_slide_tag /></h4>
-                                                <h3 class="title"><a href="#"></a><cms:show lower_slide_text /></h3>
+                                                <h4 class="subtitle">
+                                                    <cms:show lower_slide_tag />
+                                                </h4>
+                                                <h3 class="title"><a href="#"></a>
+                                                    <cms:show lower_slide_text />
+                                                </h3>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
-                                    </cms:show_repeatable>
-                                </div>
+                                </cms:show_repeatable>
+                            </div>
 
 
                             <!-- Swiper Pagination Start -->
@@ -505,9 +523,9 @@
     </div>
     <!-- Project Tab Section End -->
 
-<div class="section section-padding custom-bg-light">
-    <div class="container">
-        <div class="row">
+    <div class="section section-padding custom-bg-light">
+        <div class="container">
+            <div class="row">
                 <div class="col-lg-6 d-flex flex-column align-self-lg-center pe-lg-5 mb-4 mb-lg-0">
                     <h2 class="mb-4 fw-bold">Ready to Design the Future? Let's Build Something Great Together!</h2>
                     <p class="m-0">
@@ -537,7 +555,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
 
-                    <form id="contact-form" action="https://formsubmit.co/e37624adfb7356686eed8c00eb09f4bc" method="POST">
+                    <form id="contact-form" action="https://formsubmit.co/e37624adfb7356686eed8c00eb09f4bc"
+                        method="POST">
                         <input type="hidden" name="_captcha" value="false">
                         <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> -->
                         <input type="hidden" name="_subject" value="New Inquiry from Telamon Website">
@@ -567,7 +586,8 @@
                         <div class="d-flex align-items-center justify-content-center gap-3">
                             <button type="submit" class="btn btn-primary d-flex align-items-center" id="submit-btn">Send
                                 Message
-                                <div id="form-spinner" class="spinner-border spinner-border-sm ms-2 text-light d-none" role="status">
+                                <div id="form-spinner" class="spinner-border spinner-border-sm ms-2 text-light d-none"
+                                    role="status">
                                     <span class="visually-hidden">Loading...</span>
                                 </div>
                             </button>
@@ -576,8 +596,8 @@
 
                 </div>
             </div>
+        </div>
     </div>
-</div>
 
     <!-- Main Footer -->
     <footer class="section section-padding-top bg-light overflow-hidden">

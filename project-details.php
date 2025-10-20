@@ -62,6 +62,12 @@
         height='300' 
         default_value='<p>Add the full story, specifications, and client brief here.</p>'
     />
+
+    <cms:repeatable name='extra_photos' label='Additional Photos'>
+        <cms:editable name='extra_image' label='Slide Image' type='image' show_preview='1' preview_height='80' />
+    </cms:repeatable>
+
+ 
     
     
 </cms:template>
@@ -271,16 +277,13 @@
                     <div class="project-details-carousel">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img class="fit-image" src="assets/images/project/project-details/slide-1.jpg" alt="Project Image">
+                                <cms:show_repeatable 'extra_photos'>
+                                    <div class="swiper-slide">
+                                        <div class="image">
+                                            <img class="fit-image" src="<cms:show extra_image/>" alt="Project Extra Image">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image">
-                                        <img class="fit-image" src="assets/images/project/project-details/slide-1.jpg" alt="Project Image">
-                                    </div>
-                                </div>
+                                </cms:show_repeatable>
                             </div>
 
 
