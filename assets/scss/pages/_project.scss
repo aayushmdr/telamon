@@ -40,7 +40,7 @@
     }
 
     & .mesonry-list {
-        margin: 0 -45px;
+       
 
         @media #{$laptop-device, 
             $desktop-device, 
@@ -169,15 +169,21 @@
     }
 }
 
+.project-banner-section {
+    img {
+        max-height: 600px;
+    }
+}
+
 .info-boxed{
-	padding:80px 90px;
+	padding: 54px 54px;
     background-color: $gray-100;
 
     @media #{$desktop-device} {
-        padding: 80px 70px;
+        padding: 54px 54px;
     }
     @media #{$large-mobile} {
-        padding: 40px;
+        padding: 32px;
     }
     @media #{$extra-small-mobile} {
         padding: 20px;

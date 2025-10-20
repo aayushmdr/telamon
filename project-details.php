@@ -244,7 +244,7 @@
     <!-- Project Banner Section End -->
 
     <!-- Project Details Section Start -->
-    <div class="section section-padding-top">
+    <div class="section mt-5 pt-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-12 ms-auto me-auto">
