@@ -51,7 +51,7 @@
     }
 }
 .single-project-wrap {
-    padding: 0 30px;
+    padding: 0px;
 
     @media #{$laptop-device, 
         $desktop-device, 
@@ -79,7 +79,7 @@
     }
 
     & .inner-content {
-        padding: 25px 0 20px;
+        padding: 18px 0 18px;
         @media #{$tablet-device, $large-mobile} {
             padding-bottom: 0px;
         }

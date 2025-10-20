@@ -243,14 +243,14 @@
                     <div class="breadcrumb-wrapper">
                         <!-- Bread Title Start -->
                         <div class="bread-title">
-                            <h1 class="title">Gallery</h1>
+                            <h1 class="title">The TDC Gallery</h1>
                         </div>
                         <!-- Bread Title End -->
 
                         <!-- Post Meta Start -->
                         <ul class="post-meta">
                             <li><a href="index.php">Home</a></li>
-                            <li>Works</li>
+                            <li>Gallery</li>
                         </ul>
                         <!-- Post Meta End -->
                     </div>
@@ -265,7 +265,7 @@
 
     <!-- Project Section Start Here -->
     <div class="section project-masonry-section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row mt-n2">
 
                 <!-- project Menu Start -->
@@ -286,7 +286,7 @@
 
                 <!-- Single project Start -->
                 <cms:pages masterpage 'project.php'>
-                    <div class="col <cms:show project_category /> mb-10">
+                    <div class="col <cms:show project_category /> mb-5">
                     <div class="single-project-wrap">
                         <div class="project-thumb position-relative m-0">
                             <a class="image" href="#">
@@ -302,18 +302,6 @@
                 </cms:pages>
                 <!-- Single project End -->
 
-            </div>
-
-            <div class="row section-padding-bottom">
-                <div class="col-12">
-
-                    <!-- Load More Start -->
-                    <div class="load-more text-center">
-                        <a href="#">...Load more...</a>
-                    </div>
-                    <!-- Load More End -->
-
-                </div>
             </div>
 
         </div>

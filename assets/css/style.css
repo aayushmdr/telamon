@@ -17363,7 +17363,7 @@ ul li {
 }
 
 .single-project-wrap {
-  padding: 0 30px;
+  padding: 0px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
   .single-project-wrap {
@@ -17383,7 +17383,7 @@ ul li {
   transition: all 0.3s ease 0s;
 }
 .single-project-wrap .inner-content {
-  padding: 25px 0 20px;
+  padding: 18px 0 18px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
   .single-project-wrap .inner-content {
