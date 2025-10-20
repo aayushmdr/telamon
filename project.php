@@ -271,10 +271,10 @@
                 <!-- project Menu Start -->
                 <div class="messonry-button text-center mb-10">
                     <button data-filter="*" class="is-checked port-filter">All</button>
-                    <button data-filter="Residential" class="port-filter">Residentials</button>
-                    <button data-filter="Commercial" class="port-filter">Commercials</button>
-                    <button data-filter="Mix-use" class="port-filter">Mix-Use</button>
-                    <button data-filter="Interior" class="port-filter">Interior</button>
+                    <button data-filter=".Residential" class="port-filter">Residentials</button>
+                    <button data-filter=".Commercial" class="port-filter">Commercials</button>
+                    <button data-filter=".Mix-use" class="port-filter">Mix-Use</button>
+                    <button data-filter=".Interior" class="port-filter">Interior</button>
                 </div>
                 <!-- project Menu End -->
 
