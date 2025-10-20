@@ -16734,17 +16734,15 @@ ul li {
   font-family: "Rubik", sans-serif;
 }
 .single-project-slide .content .title {
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 600;
   font-family: "Rubik", sans-serif;
+  color: #fff;
 }
 @media only screen and (max-width: 767px) {
   .single-project-slide .content .title {
-    font-size: 22px;
+    font-size: 18px;
   }
-}
-.single-project-slide .content .title a {
-  color: #fff;
 }
 .single-project-slide:hover .content::before {
   height: 100%;
@@ -16758,8 +16756,6 @@ ul li {
 .single-project-slide:hover .content .title {
   position: relative;
   z-index: 9;
-}
-.single-project-slide:hover .content .title a {
   color: #324a8f;
 }
 

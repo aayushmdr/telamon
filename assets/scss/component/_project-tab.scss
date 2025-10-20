@@ -122,16 +122,13 @@
         }
 
         & .title {
-            font-size: 34px;
+            font-size: 32px;
             font-weight: 600;
             font-family: $font-family-base;
+            color: $white;
             @media #{$large-mobile} {
-                font-size: 22px;
+                font-size: 18px;
              }
-
-            & a {
-                color: $white;
-            }
         }
     }
 
@@ -151,9 +148,8 @@
             & .title {
                 position: relative;
                 z-index: 9;
-                & a {
-                    color: $primary;
-                }
+                color: $primary;
+                
             }
         }
     }

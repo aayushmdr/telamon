@@ -2,17 +2,17 @@
 
 <cms:template title='Homepage Content' clonable='0' icon='home'>
     <cms:repeatable name='hero_slides' label='Hero Slideshow Content'>
-        <cms:editable name='slide_image' label='Slide Background Image' desc='The main background image for this slide (1920x1080 recommended)' type='image' show_preview='1' preview_height='100' />
-        <cms:editable name='slide_subtitle' label='Slide Subtitle' desc='e.g., Residential Design' type='text' />
-        <cms:editable name='slide_title' label='Slide Header Title' type='text' />
-        <cms:editable name='slide_paragraph' label='Slide Paragraph Text' type='textarea' />
-        <cms:editable name='slide_contact_link' label='Contact Button Link URL' type='text' />
+        <cms:editable name='slide_image' label='Slide Background Image' desc='The main background image for this slide (1920x1080 recommended)' type='image' show_preview='1' preview_height='100' default_value='assets/img/hero-banner.jpg' />
+        <cms:editable name='slide_subtitle' label='Slide Subtitle' desc='e.g., Residential Design' type='text' default_value='Residential Design' />
+        <cms:editable name='slide_title' label='Slide Header Title' type='text' default_value='Default Title.'/>
+        <cms:editable name='slide_paragraph' label='Slide Paragraph Text' type='textarea' default_value='Contact your administrator to change this.' />
+        <cms:editable name='slide_contact_link' label='Contact Button Link URL' type='text' default_value='contact.html'/>
     </cms:repeatable>
 
      <cms:repeatable name='lower_slideshow' label='Lower Content Slideshow Items'>
-        <cms:editable name='lower_slide_image' label='Slide Image' type='image' show_preview='1' preview_height='80' />
-        <cms:editable name='lower_slide_text' label='Slide Title' type='text' />
-        <cms:editable name='lower_slide_tag' label='Slide Tag' type='text' />
+        <cms:editable name='lower_slide_image' label='Slide Image' type='image' show_preview='1' preview_height='80' default_value='assets/img/hero-banner.jpg' />
+        <cms:editable name='lower_slide_text' label='Slide Title' type='text' default_value='Default Title' />
+        <cms:editable name='lower_slide_tag' label='Slide Tag' type='text' default_value='Default subtitle' />
     </cms:repeatable>
 
 </cms:template>
@@ -473,11 +473,14 @@
                                     
                                     <div class="swiper-slide">
                                         
-                                        <img src="<cms:show lower_slide_image />" alt="Slide Image" /> 
-                                        
-                                        <div class="text-content">
-                                            <h5 class="subtitle"><cms:show lower_slide_tag /></h5>
-                                            <h4 class="subtitle"><cms:show lower_slide_title /></h4>
+                                        <div class="single-project-slide">
+                                            <div class="thumb">
+                                                <img class="fit-image" src="<cms:show lower_slide_image />" alt="Slide Image" /> 
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="subtitle"><cms:show lower_slide_tag /></h4>
+                                                <h3 class="title"><a href="#"></a><cms:show lower_slide_text /></h3>
+                                            </div>
                                         </div>
                                         
                                     </div>
