@@ -1,73 +1,5 @@
 <?php require_once( 'couch/cms.php' ); ?>
 
-<cms:template title='Project Gallery' clonable='1' commentable='0' detail_page='project_detail.php'>
-
-    <cms:editable 
-            name='project_thumbnail' 
-            label='Project Thumbnail' 
-            desc='Image to be shown in the main gallery listing' 
-            type='image' 
-            show_preview='1' 
-            preview_height='100'
-    />
-
-    <cms:editable 
-        name='caption' 
-        label='Caption' 
-        type='text' 
-        default_value='Residential'
-    />
-
-    <cms:editable 
-        name='project_category' 
-        label='Category' 
-        desc='Select the project category for filtering' 
-        type='dropdown'
-        opt_values='Residential | Commercial | Mix-use | Interior | Public'
-        default_value='Residential'
-    />
-
-   
-    <cms:editable 
-        name='project_client' 
-        label='Client Name' 
-        type='text' 
-        default_value='Confidential Client'
-    />
-    
-    <cms:editable 
-        name='project_location' 
-        label='Location' 
-        type='text' 
-        default_value='Madrid, Spain'
-    />
-    
-    <cms:editable 
-        name='project_start_date' 
-        label='Start Date' 
-        type='datetime' 
-        default_value='2024-01-01'
-    />
-    
-    <cms:editable 
-        name='project_end_date' 
-        label='End Date' 
-        type='datetime' 
-        default_value='2024-12-31'
-    />
-
-    <cms:editable 
-        name='project_details' 
-        label='Full Project Details' 
-        type='richtext' 
-        height='300' 
-        default_value='<p>Add the full story, specifications, and client brief here.</p>'
-    />
-    
-    
-</cms:template>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -285,17 +217,17 @@
                 <div class="resizer col"></div>
 
                 <!-- Single project Start -->
-                <cms:pages masterpage 'project.php'>
+                <cms:pages masterpage='project-details.php'>
                     <div class="col <cms:show project_category /> mb-5">
                     <div class="single-project-wrap">
                         <div class="project-thumb position-relative m-0">
-                            <a class="image" href="#">
-                                <img src="<cms:show project_thumbnail />" alt="project Image">
+                            <a class="image" href="<cms:show k_page_link />">
+                                <img src="<cms:show project_thumbnail />" alt="<cms:show caption />">
                             </a>
                         </div>
                         <div class="inner-content">
                             <div class="sub-title"><cms:show project_category/></div>
-                            <h4 class="title"><a href="#"><cms:show caption /></a></h4>
+                            <h4 class="title"><a href="<cms:show k_page_link />"><cms:show caption /></a></h4>
                         </div>
                     </div>
                 </div>
