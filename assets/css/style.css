@@ -17336,10 +17336,12 @@ ul li {
   cursor: pointer;
   text-transform: uppercase;
   transition: all 0.3s ease 0s;
+  padding-bottom: 10px;
+  transition: all 50ms ease-in-out;
 }
 .project-masonry-section .messonry-button .port-filter:hover, .project-masonry-section .messonry-button .port-filter.is-checked {
   color: #324a8f;
-  text-decoration: underline;
+  border-bottom: 2px solid #324a8f;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
   .project-masonry-section .messonry-button .port-filter {

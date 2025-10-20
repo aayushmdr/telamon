@@ -22,10 +22,12 @@
             cursor: pointer;
             text-transform: uppercase;
             transition: $transition-base;
+            padding-bottom: 10px;
+            transition: all 50ms ease-in-out;
 
             &:hover, &.is-checked {
                 color: $primary;
-                text-decoration: underline;
+                border-bottom: 2px solid $primary;
             }
 
             @media #{$tablet-device, $large-mobile} {

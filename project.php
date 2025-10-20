@@ -1,3 +1,77 @@
+<?php require_once( 'couch/cms.php' ); ?>
+
+<cms:template title='Project Gallery' clonable='1' commentable='0' detail_page='project_detail.php'>
+
+    <cms:editable 
+        name='project_category' 
+        label='Category' 
+        desc='Select the project category for filtering' 
+        type='dropdown'
+        opt_values='Residential | Commercial | Mix-use | Hospitality | Public'
+        default_value='Residential'
+    />
+
+    <cms:editable 
+        name='project_thumbnail' 
+        label='Project Thumbnail' 
+        desc='Image to be shown in the main gallery listing' 
+        type='image' 
+        show_preview='1' 
+        preview_height='100'
+    />
+    
+    <cms:editable 
+        name='project_brief' 
+        label='Short Description/Location' 
+        type='text' 
+        default_value='Spain, 2024'
+    />
+
+    <cms:editable 
+        name='project_client' 
+        label='Client Name' 
+        type='text' 
+        default_value='Confidential Client'
+    />
+    
+    <cms:editable 
+        name='project_location' 
+        label='Location' 
+        type='text' 
+        default_value='Madrid, Spain'
+    />
+    
+    <cms:editable 
+        name='project_start_date' 
+        label='Start Date' 
+        type='date' 
+        default_value='2024-01-01'
+    />
+    
+    <cms:editable 
+        name='project_end_date' 
+        label='End Date' 
+        type='date' 
+        default_value='2024-12-31'
+    />
+
+    <cms:editable 
+        name='project_details' 
+        label='Full Project Details' 
+        type='richtext' 
+        height='300' 
+        default_value='<p>Add the full story, specifications, and client brief here.</p>'
+    />
+    
+    <cms:editable 
+        name='project_full_gallery' 
+        label='Project Images Gallery' 
+        type='gallery' 
+    />
+    
+</cms:template>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,6 +105,7 @@
     <!-- Main Style CSS -->
 
 
+    <link rel="stylesheet" href="assets/css/custom.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
 
@@ -79,7 +154,7 @@
                                             <a href="index.php">Home</a>
                                         </li>
                                         <li>
-                                            <a class="active" href="project.html">Gallery</a>
+                                            <a class="active" href="project.php">Gallery</a>
                                         </li>
                                         <li>
                                             <a href="about.html">About Us</a>
@@ -146,7 +221,7 @@
                                 <a href="index.php">Home</a>
                             </li>
                             <li class="has-children">
-                                <a href="project.html">Gallery</a>
+                                <a href="project.php">Gallery</a>
                             </li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
@@ -172,7 +247,7 @@
                     <div class="breadcrumb-wrapper">
                         <!-- Bread Title Start -->
                         <div class="bread-title">
-                            <h1 class="title">Our Works</h1>
+                            <h1 class="title">Gallery</h1>
                         </div>
                         <!-- Bread Title End -->
 
@@ -390,7 +465,7 @@
                     <!-- Footer Nav Start -->
                     <ul class="footer-nav mb-n3">
                         <li class="mb-3"><a href="index.php">Home</a></li>
-                        <li class="mb-3"><a href="project.html">Gallery</a></li>
+                        <li class="mb-3"><a href="project.php">Gallery</a></li>
                         <li class="mb-3"><a href="about.html">About us</a></li>
                         <li class="mb-3"><a href="contact.html">Contact us</a></li>
                     </ul>
@@ -466,3 +541,5 @@
 </body>
 
 </html>
+
+<?php COUCH::invoke(); ?>

@@ -102,9 +102,9 @@
                                             <a class="active" href="index.php">Home</a>
                                         </li>
                                         <li>
-                                            <a href="project.html">Gallery</a>
+                                            <a href="project.php">Gallery</a>
                                             <!-- <ul class="submenu">
-                                                <li><a href="project.html">Project</a></li>
+                                                <li><a href="project.php">Project</a></li>
                                                 <li><a href="project-details.html">Project Details</a></li>
                                             </ul> -->
                                         </li>
@@ -173,9 +173,9 @@
                                 <a href="index.php">Home</a>
                             </li>
                             <li class="has-children">
-                                <a href="project.html">Our Works</a>
+                                <a href="project.php">Our Works</a>
                                 <!-- <ul class="dropdown">
-                                    <li><a href="project.html">Project</a></li>
+                                    <li><a href="project.php">Project</a></li>
                                     <li><a href="project-details.html">Project Details</a></li>
                                 </ul> -->
                             </li>
@@ -454,7 +454,7 @@
                 <!-- All Project Button Start -->
                 <div class="col-xl-3 col-md-5 col-sm-12">
                     <div class="all-project-btn">
-                        <a href="project.html">See All Projects <i class="arrow icofont-rounded-right"></i></a>
+                        <a href="project.php">See All Projects <i class="arrow icofont-rounded-right"></i></a>
                     </div>
                 </div>
                 <!-- All Project Button End -->
@@ -594,7 +594,7 @@
                     <!-- Footer Nav Start -->
                     <ul class="footer-nav mb-n3">
                         <li class="mb-3"><a href="index.php">Home</a></li>
-                        <li class="mb-3"><a href="project.html">Gallery</a></li>
+                        <li class="mb-3"><a href="project.php">Gallery</a></li>
                         <li class="mb-3"><a href="about.html">About us</a></li>
                         <li class="mb-3"><a href="contact.html">Contact us</a></li>
                     </ul>
