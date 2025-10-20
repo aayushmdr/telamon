@@ -3,30 +3,31 @@
 <cms:template title='Project Gallery' clonable='1' commentable='0' detail_page='project_detail.php'>
 
     <cms:editable 
-        name='project_category' 
-        label='Category' 
-        desc='Select the project category for filtering' 
-        type='dropdown'
-        opt_values='Residential | Commercial | Mix-use | Hospitality | Public'
+            name='project_thumbnail' 
+            label='Project Thumbnail' 
+            desc='Image to be shown in the main gallery listing' 
+            type='image' 
+            show_preview='1' 
+            preview_height='100'
+    />
+
+    <cms:editable 
+        name='caption' 
+        label='Caption' 
+        type='text' 
         default_value='Residential'
     />
 
     <cms:editable 
-        name='project_thumbnail' 
-        label='Project Thumbnail' 
-        desc='Image to be shown in the main gallery listing' 
-        type='image' 
-        show_preview='1' 
-        preview_height='100'
-    />
-    
-    <cms:editable 
-        name='project_brief' 
-        label='Short Description/Location' 
-        type='text' 
-        default_value='Spain, 2024'
+        name='project_category' 
+        label='Category' 
+        desc='Select the project category for filtering' 
+        type='dropdown'
+        opt_values='Residential | Commercial | Mix-use | Interior | Public'
+        default_value='Residential'
     />
 
+   
     <cms:editable 
         name='project_client' 
         label='Client Name' 
@@ -44,14 +45,14 @@
     <cms:editable 
         name='project_start_date' 
         label='Start Date' 
-        type='date' 
+        type='datetime' 
         default_value='2024-01-01'
     />
     
     <cms:editable 
         name='project_end_date' 
         label='End Date' 
-        type='date' 
+        type='datetime' 
         default_value='2024-12-31'
     />
 
@@ -63,11 +64,6 @@
         default_value='<p>Add the full story, specifications, and client brief here.</p>'
     />
     
-    <cms:editable 
-        name='project_full_gallery' 
-        label='Project Images Gallery' 
-        type='gallery' 
-    />
     
 </cms:template>
 
@@ -275,10 +271,10 @@
                 <!-- project Menu Start -->
                 <div class="messonry-button text-center mb-10">
                     <button data-filter="*" class="is-checked port-filter">All</button>
-                    <button data-filter=".cat-1" class="port-filter">Residentials</button>
-                    <button data-filter=".cat-2" class="port-filter">Commercials</button>
-                    <button data-filter=".cat-3" class="port-filter">Architecture</button>
-                    <button data-filter=".cat-4" class="port-filter">Interior</button>
+                    <button data-filter="Residential" class="port-filter">Residentials</button>
+                    <button data-filter="Commercial" class="port-filter">Commercials</button>
+                    <button data-filter="Mix-use" class="port-filter">Mix-Use</button>
+                    <button data-filter="Interior" class="port-filter">Interior</button>
                 </div>
                 <!-- project Menu End -->
 
@@ -289,147 +285,21 @@
                 <div class="resizer col"></div>
 
                 <!-- Single project Start -->
-                <div class="col cat-2 cat-3 cat-4 mb-10">
+                <cms:pages masterpage 'project.php'>
+                    <div class="col <cms:show project_category /> mb-10">
                     <div class="single-project-wrap">
                         <div class="project-thumb position-relative m-0">
-                            <a class="image" href="project-details.html">
-                                <img src="assets/images/gallery/2.jpg" alt="project Image">
+                            <a class="image" href="#">
+                                <img src="<cms:show project_thumbnail />" alt="project Image">
                             </a>
                         </div>
                         <div class="inner-content">
-                            <div class="sub-title">Residentials</div>
-                            <h4 class="title"><a href="project-details.html">Dustin Villa, Spain</a></h4>
+                            <div class="sub-title"><cms:show project_category/></div>
+                            <h4 class="title"><a href="#"><cms:show caption /></a></h4>
                         </div>
                     </div>
                 </div>
-                <!-- Single project End -->
-
-                <!-- Single project Start -->
-                <div class="col cat-2 cat-3 cat-4 mb-10">
-                    <div class="single-project-wrap">
-                        <div class="project-thumb position-relative m-0">
-                            <a class="image" href="project-details.html">
-                                <img src="assets/images/gallery/3.jpg" alt="project Image">
-                            </a>
-                        </div>
-                        <div class="inner-content">
-                            <div class="sub-title">Commercial</div>
-                            <h4 class="title"><a href="project-details.html">ABC Financial Bank</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single project End -->
-
-                <!-- Single project Start -->
-                <div class="col cat-1 cat-2 mb-10">
-                    <div class="single-project-wrap">
-                        <div class="project-thumb position-relative m-0">
-                            <a class="image" href="project-details.html">
-                                <img src="assets/images/gallery/4.jpg" alt="project Image">
-                            </a>
-                        </div>
-                        <div class="inner-content">
-                            <div class="sub-title">Residentials</div>
-                            <h4 class="title"><a href="project-details.html">Cubic Villa</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single project End -->
-
-                <!-- Single project Start -->
-                <div class="col cat-4 cat-3 mb-10">
-                    <div class="single-project-wrap">
-                        <div class="project-thumb position-relative m-0">
-                            <a class="image" href="project-details.html">
-                                <img src="assets/images/gallery/5.jpg" alt="project Image">
-                            </a>
-                        </div>
-                        <div class="inner-content">
-                            <div class="sub-title">Interior</div>
-                            <h4 class="title"><a href="project-details.html">Minimal Interior - A5, Italy</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single project End -->
-
-                <!-- Single project Start -->
-                <div class="col cat-2 cat-1 mb-10">
-                    <div class="single-project-wrap">
-                        <div class="project-thumb position-relative m-0">
-                            <a class="image" href="project-details.html">
-                                <img src="assets/images/gallery/6.jpg" alt="project Image">
-                            </a>
-                        </div>
-                        <div class="inner-content">
-                            <div class="sub-title">Architecture</div>
-                            <h4 class="title"><a href="project-details.html">Culture House</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single project End -->
-
-                <!-- Single project Start -->
-                <div class="col cat-1 cat-4 mb-10">
-                    <div class="single-project-wrap">
-                        <div class="project-thumb position-relative m-0">
-                            <a class="image" href="project-details.html">
-                                <img src="assets/images/gallery/7.jpg" alt="project Image">
-                            </a>
-                        </div>
-                        <div class="inner-content">
-                            <div class="sub-title">Interior</div>
-                            <h4 class="title"><a href="project-details.html">B6-No.5 OLA Tower</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single project End -->
-
-                <!-- Single project Start -->
-                <div class="col cat-1 cat-3 mb-10">
-                    <div class="single-project-wrap">
-                        <div class="project-thumb position-relative m-0">
-                            <a class="image" href="project-details.html">
-                                <img src="assets/images/gallery/8.jpg" alt="project Image">
-                            </a>
-                        </div>
-                        <div class="inner-content">
-                            <div class="sub-title">Architecture</div>
-                            <h4 class="title"><a href="project-details.html">OSHO Retreat Homestay</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single project End -->
-
-                <!-- Single project Start -->
-                <div class="col cat-2 cat-4 mb-10">
-                    <div class="single-project-wrap">
-                        <div class="project-thumb position-relative m-0">
-                            <a class="image" href="project-details.html">
-                                <img src="assets/images/gallery/9.jpg" alt="project Image">
-                            </a>
-                        </div>
-                        <div class="inner-content">
-                            <div class="sub-title">Residentials</div>
-                            <h4 class="title"><a href="project-details.html">Davia Villa, Ukraine</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single project End -->
-
-                <!-- Single project Start -->
-                <div class="col cat-1 cat-3 mb-10">
-                    <div class="single-project-wrap">
-                        <div class="project-thumb position-relative m-0">
-                            <a class="image" href="project-details.html">
-                                <img src="assets/images/gallery/10.jpg" alt="project Image">
-                            </a>
-                        </div>
-                        <div class="inner-content">
-                            <div class="sub-title">Commercial</div>
-                            <h4 class="title"><a href="project-details.html">Liberty University, Poland</a></h4>
-                        </div>
-                    </div>
-                </div>
+                </cms:pages>
                 <!-- Single project End -->
 
             </div>
