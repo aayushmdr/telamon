@@ -195,4 +195,4 @@
     // <a href="https://www.couchcms.com/" title="CouchCMS - Simple Open-Source Content Management">CouchCMS</a></div>
     //
     // Failing to do so will constitute a violation of the CPAL license this software is provided under.
-    define( 'K_REMOVE_FOOTER_LINK', 0 );
+    define( 'K_REMOVE_FOOTER_LINK', 1 );

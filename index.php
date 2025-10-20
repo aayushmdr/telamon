@@ -236,7 +236,10 @@
                                         <cms:show slide_paragraph />
                                     </p>
 
-                                    <a href="<cms:show slide_contact_link />" class="btn btn-light">Contact Us</a>
+                                    <div class="d-flex flex-row gap-4">
+                                        <a href="mailto: meeza.manandhar@telamondesignconsult.com" class="btn btn-light">Contact Us</a>
+                                        <a href="project.php" class="btn btn-link">View Our Work</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -421,7 +424,7 @@
                         <div class="col-sm-6 mt-sm-0">
                             <div class="custom-card-metrics rounded-1 d-flex flex-column gap-2 p-3">
                                 <p class="text-uppercase fs-6 m-0">Client Satisfaction</p>
-                                <h1 class="display-5 m-0"><count-up lazy="lazy">98</count-up>%</h1>
+                                <h1 class="display-5 m-0"><count-up lazy="lazy">100</count-up>%</h1>
                                 <p class="text-black-50 small m-0">measured through post-project feedback and repeat
                                     clients.</p>
 

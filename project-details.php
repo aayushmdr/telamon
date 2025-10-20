@@ -305,6 +305,12 @@
     </div>
     <!-- Project Details Section End -->
 
+    <div class="text-center my-5">
+        <button class="btn-secondary">
+            Go back
+        </button>
+    </div>
+
     <!-- Main Footer -->
     <footer class="section section-padding-top bg-light overflow-hidden">
         <div class="container-fluid">
