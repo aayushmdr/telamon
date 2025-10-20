@@ -1,5 +1,24 @@
 <?php require_once( 'couch/cms.php' ); ?>
 
+<cms:template title='Homepage Content' clonable='0' icon='home'>
+    <cms:repeatable name='hero_slides' label='Hero Slideshow Content'>
+        <cms:editable name='slide_image' label='Slide Background Image' desc='The main background image for this slide (1920x1080 recommended)' type='image' show_preview='1' preview_height='100' />
+        <cms:editable name='slide_subtitle' label='Slide Subtitle' desc='e.g., Residential Design' type='text' />
+        <cms:editable name='slide_title' label='Slide Header Title' type='text' />
+        <cms:editable name='slide_paragraph' label='Slide Paragraph Text' type='textarea' />
+        <cms:editable name='slide_contact_link' label='Contact Button Link URL' type='text' />
+    </cms:repeatable>
+
+     <cms:repeatable name='lower_slideshow' label='Lower Content Slideshow Items'>
+        <cms:editable name='lower_slide_image' label='Slide Image' type='image' show_preview='1' preview_height='80' />
+        <cms:editable name='lower_slide_text' label='Slide Title' type='text' />
+        <cms:editable name='lower_slide_tag' label='Slide Tag' type='text' />
+    </cms:repeatable>
+
+</cms:template>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -187,66 +206,32 @@
         <!-- Hero Slider Start -->
         <div class="hero-slider">
             <div class="swiper-container">
-                <div class="swiper-wrapper">
+               <div class="swiper-wrapper">
 
-                    <!-- Hero Slider Item Start -->
-                    <div class="hero-slide-item swiper-slide">
+    <cms:show_repeatable 'hero_slides'> 
+        
+        <div class="hero-slide-item swiper-slide">
 
-                        <!-- Hero Slider Bg Image Start -->
-                        <div class="hero-slide-bg">
-                            <img src="assets/img/gallery/residential/01madan07.png" alt="Slider Image" />
-                        </div>
-                        <!-- Hero Slider Bg image End -->
-
-                        <!-- Hero Slider Content Start -->
-                        <div class="container">
-                            <div class="hero-slide-content">
-                                <h4 class="subtitle">Residential Design</h4>
-                                <h3 class="title">
-                                    Bungalow Design, <br />
-                                    Sitapaila
-                                </h3>
-                                <p>Combine with ideas of owner, Dustin Mahone. Arquito’s team completed a super villa
-                                    with many powerful features, help owner really enjoy his life beside the beach</p>
-                                <!-- <a href="project.html" class="btn-link">See Project</a> -->
-                                <div class="btn btn-light">Contact Us</div>
-                            </div>
-                        </div>
-                        <!-- Hero Slider Content End -->
-
-                    </div>
-                    <!-- Hero Slider Item End -->
-
-                    <!-- Hero Slider Item Start -->
-                    <div class="hero-slide-item swiper-slide">
-
-                        <!-- Hero Slider Bg Image Start -->
-                        <div class="hero-slide-bg">
-                            <img src="assets/img/gallery/residential/Enscape_2024-04-04-17-22-39.png"
-                                alt="Slider Image" />
-                        </div>
-                        <!-- Hero Slider Bg Image End -->
-
-                        <!-- Hero Slider Content Start -->
-                        <div class="container">
-                            <div class="hero-slide-content">
-                                <h4 class="subtitle">Residence</h4>
-                                <h3 class="title">
-                                    Dustin Villa, <br />
-                                    Spain
-                                </h3>
-                                <p>Combine with ideas of owner, Dustin Mahone. Arquito’s team completed a super villa
-                                    with many powerful features, help owner really enjoy his life beside the beach</p>
-                                <!-- <a href="project.html" class="btn-link">See Project</a> -->
-                                <div class="btn btn-light">Contact Us</div>
-                            </div>
-                        </div>
-                        <!-- Hero Slider Content End -->
-
-                    </div>
-                    <!-- Hero Slider Item End -->
-
+            <div class="hero-slide-bg">
+                <img src="<cms:show slide_image />" alt="Slider Image" /> 
+            </div>
+            <div class="container">
+                <div class="hero-slide-content">
+                    
+                    <h4 class="subtitle"><cms:show slide_subtitle /></h4> 
+                    
+                    <h3 class="title">
+                        <cms:show slide_title />
+                    </h3>
+                    
+                    <p><cms:show slide_paragraph /></p> 
+                    
+                    <a href="<cms:show slide_contact_link />" class="btn btn-light">Contact Us</a> 
                 </div>
+            </div>
+            </div>
+    </cms:show_repeatable>
+    </div>
 
                 <!-- Swiper Pagination Start -->
                 <div class="swiper-pagination d-md-none"></div>
@@ -484,103 +469,21 @@
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
 
-                                <div class="swiper-slide">
-                                    <!-- Single Project Slide Start -->
-                                    <div class="single-project-slide">
-
-                                        <!-- Thumb Start -->
-                                        <div class="thumb">
-                                            <a href="#" class="image">
-                                                <img class="fit-image" src="assets/img/gallery/DINING AND KITCHEN UPDATE.png"
-                                                    alt="Product" />
-                                            </a>
+                                <cms:show_repeatable 'lower_slideshow'>
+                                    
+                                    <div class="swiper-slide">
+                                        
+                                        <img src="<cms:show lower_slide_image />" alt="Slide Image" /> 
+                                        
+                                        <div class="text-content">
+                                            <h5 class="subtitle"><cms:show lower_slide_tag /></h5>
+                                            <h4 class="subtitle"><cms:show lower_slide_title /></h4>
                                         </div>
-                                        <!-- Thumb End -->
-
-                                        <!-- Content Start -->
-                                        <div class="content">
-                                            <h4 class="subtitle">Custom Architecture</h4>
-                                            <h3 class="title"><a href="#">Culture House</a></h3>
-                                        </div>
-                                        <!-- Content End -->
-
+                                        
                                     </div>
-                                    <!-- Single Project Slide End -->
+                                    </cms:show_repeatable>
                                 </div>
 
-                                <div class="swiper-slide">
-                                    <!-- Single Project Slide Start -->
-                                    <div class="single-project-slide">
-
-                                        <!-- Thumb Start -->
-                                        <div class="thumb">
-                                            <a href="#" class="image">
-                                                <img class="fit-image" src="assets/img/gallery/dining display.png"
-                                                    alt="Product" />
-                                            </a>
-                                        </div>
-                                        <!-- Thumb End -->
-
-                                        <!-- Content Start -->
-                                        <div class="content">
-                                            <h4 class="subtitle">Custom Commercial</h4>
-                                            <h3 class="title"><a href="#">ABC Financial Bank</a></h3>
-                                        </div>
-                                        <!-- Content End -->
-
-                                    </div>
-                                    <!-- Single Project Slide End -->
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <!-- Single Project Slide Start -->
-                                    <div class="single-project-slide">
-
-                                        <!-- Thumb Start -->
-                                        <div class="thumb">
-                                            <a href="#" class="image">
-                                                <img class="fit-image" src="assets/img/gallery/cafe and restaurant/nasa dhukoo/causal interior 01.png"
-                                                    alt="Product" />
-                                            </a>
-                                        </div>
-                                        <!-- Thumb End -->
-
-                                        <!-- Content Start -->
-                                        <div class="content">
-                                            <h4 class="subtitle">Custom Interior</h4>
-                                            <h3 class="title"><a href="#">B6-No.5 OLA Tower</a></h3>
-                                        </div>
-                                        <!-- Content End -->
-
-                                    </div>
-                                    <!-- Single Project Slide End -->
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <!-- Single Project Slide Start -->
-                                    <div class="single-project-slide">
-
-                                        <!-- Thumb Start -->
-                                        <div class="thumb">
-                                            <a href="#" class="image">
-                                                <img class="fit-image" src="assets/img/gallery/residential/01KABI01.jpg"
-                                                    alt="Product" />
-                                            </a>
-                                        </div>
-                                        <!-- Thumb End -->
-
-                                        <!-- Content Start -->
-                                        <div class="content">
-                                            <h4 class="subtitle">Custom Interior</h4>
-                                            <h3 class="title"><a href="#">B6-No.5 OLA Tower</a></h3>
-                                        </div>
-                                        <!-- Content End -->
-
-                                    </div>
-                                    <!-- Single Project Slide End -->
-                                </div>
-
-                            </div>
 
                             <!-- Swiper Pagination Start -->
                             <div class="swiper-pagination d-none"></div>

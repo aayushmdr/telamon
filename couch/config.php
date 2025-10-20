@@ -12,6 +12,7 @@
     // If necessary, define the full URL of your site including the subdomain, if any.
     // V.IMP: Don't forget the trailing slash!
     //define( 'K_SITE_URL', 'http://www.test.com/subfolder1/subfolder2/mysite/' );
+    define( 'K_SITE_URL', 'http://localhost/telamon/' );
 
     // 1b.
     // For security purpose, the 'index.php' file of Couch can be renamed to anything else.
@@ -45,7 +46,7 @@
     define( 'K_DB_USER', 'root' );
     // 6.
     // Database password
-    define( 'K_DB_PASSWORD', 'admin' );
+    define( 'K_DB_PASSWORD', '' );
     // 7.
     // MySQL hostname (it will usually be 'localhost')
     define( 'K_DB_HOST', 'localhost' );
