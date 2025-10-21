@@ -305,10 +305,12 @@
     </div>
     <!-- Project Details Section End -->
 
-    <div class="text-center my-5">
-        <button class="btn-secondary">
+    <div class="section section-padding text-center my-5">
+        <a href="project.php">
+            <button class="btn btn-secondary">
             Go back
         </button>
+        </a>
     </div>
 
     <!-- Main Footer -->
