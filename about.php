@@ -1,3 +1,5 @@
+<?php require_once( 'couch/cms.php' ); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -90,7 +92,7 @@
                                             </ul> -->
                                         </li>
                                         <li>
-                                            <a class="active" href="about.html">About Us</a>
+                                            <a class="active" href="about.php">About Us</a>
                                         </li>
                                         <li>
                                             <a href="contact.html">Contact Us</a>
@@ -167,7 +169,7 @@
                                     <li><a href="blog-details.html">Blog Details</a></li>
                                 </ul>
                             </li> -->
-                            <li><a href="about.html">About</a></li>
+                            <li><a href="about.php">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
@@ -616,7 +618,7 @@
                     <ul class="footer-nav mb-n3">
                         <li class="mb-3"><a href="index.php">Home</a></li>
                         <li class="mb-3"><a href="project.php">Gallery</a></li>
-                        <li class="mb-3"><a href="about.html">About us</a></li>
+                        <li class="mb-3"><a href="about.php">About us</a></li>
                         <li class="mb-3"><a href="contact.html">Contact us</a></li>
                     </ul>
                     <!-- Footer Nav End -->
@@ -691,3 +693,5 @@
 </body>
 
 </html>
+
+<?php COUCH::invoke(); ?>
