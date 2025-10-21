@@ -1,0 +1,47 @@
+@import "custom-variables";
+
+* {
+    font-family: "Rubik", sans-serif !important;
+}
+
+.work-section {
+    padding-top: 64px;
+}
+
+.custom-card {
+    &-metrics {
+        height: 100%;
+        transition: 200ms ease-in;
+
+        &:hover {
+            transition: 200ms ease-out;
+            background: $custom-bg-light;
+            color: var(--bs-primary);
+        }
+    }
+
+    &-services {
+        background-color: $custom-bg-light;
+        color: var(--bs-primary);
+        height: 100%;
+        transition: 300ms ease-in;
+
+        p {
+            color: #434d56;
+        }
+
+        &:hover {
+            background: var(--bs-primary);
+            color: white;
+
+            p {
+                color: white;
+            }
+        }
+    }
+
+}
+
+.custom-bg-light {
+    background-color: $custom-bg-light;
+}

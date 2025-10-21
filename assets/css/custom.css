@@ -1,0 +1,37 @@
+* {
+  font-family: "Rubik", sans-serif !important;
+}
+
+.work-section {
+  padding-top: 64px;
+}
+
+.custom-card-metrics {
+  height: 100%;
+  transition: 200ms ease-in;
+}
+.custom-card-metrics:hover {
+  transition: 200ms ease-out;
+  background: #D6Dbe9;
+  color: var(--bs-primary);
+}
+.custom-card-services {
+  background-color: #D6Dbe9;
+  color: var(--bs-primary);
+  height: 100%;
+  transition: 300ms ease-in;
+}
+.custom-card-services p {
+  color: #434d56;
+}
+.custom-card-services:hover {
+  background: var(--bs-primary);
+  color: white;
+}
+.custom-card-services:hover p {
+  color: white;
+}
+
+.custom-bg-light {
+  background-color: #D6Dbe9;
+}/*# sourceMappingURL=custom.css.map */
