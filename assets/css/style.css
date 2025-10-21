@@ -16353,6 +16353,10 @@ ul li {
 /*====================  
     4.2 History CSS
 ====================*/
+.history-image {
+  max-width: 350px;
+  max-height: 650px;
+}
 @media only screen and (max-width: 767px) {
   .history-image {
     max-height: 550px;

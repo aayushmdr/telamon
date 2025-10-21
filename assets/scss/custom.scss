@@ -1,5 +1,12 @@
 @import "custom-variables";
 
+* {
+    font-family: "Rubik", sans-serif !important;
+}
+
+.work-section {
+    padding-top: 64px;
+}
 
 .custom-card {
     &-metrics {

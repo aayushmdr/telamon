@@ -51,6 +51,7 @@
     <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css" />
     <link rel="stylesheet" href="assets/css/plugins/odometer.min.css" />
     <link rel="stylesheet" href="assets/css/plugins/fancybox.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
 
     <!-- Main Style CSS -->
@@ -445,14 +446,77 @@
     </div>
     <!-- Services Section End -->
 
+    <div class="section section-padding">
+                <div class="container">
+            <div class="mb-5">
+                <h1 class="fw-bold">
+                    Our Services
+                </h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card-services rounded-1 d-flex flex-column gap-2 p-4">
+                        <i class="ri-home-smile-line ri-3x mb-4"></i>
+                        <h4 class="text-primary m-0">Residential Architecture</h4>
+                        <p class="m-0 small">We design homes that reflect your lifestyle and personality -
+                            crafted with precision, comfort and timeless style in mind.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card-services rounded-1 d-flex flex-column gap-2 p-4">
+                        <i class="ri-building-line ri-3x mb-4"></i>
+                        <h4 class="text-primary m-0">Commercial Design</h4>
+                        <p class="m-0 small">From retail spaces to corporate offices, we create environments that are
+                            functional, future-ready and visually compelling.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card-services rounded-1 d-flex flex-column gap-2 p-4">
+                        <i class="ri-armchair-line ri-3x mb-4"></i>
+                        <h4 class="text-primary m-0">Interior Design</h4>
+                        <p class="m-0 small">Our interiors blend aesthetics with practicality, bringing cohersion and
+                            elegance
+                            to every room and space.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card-services rounded-1 d-flex flex-column gap-2 p-4">
+                        <i class="ri-home-gear-line ri-3x mb-4"></i>
+                        <h4 class="text-primary m-0">Renovation & Restoration</h4>
+                        <p class="m-0 small">We breathe new life into existing structures, respecting their history
+                            while
+                            modernizing for today's needs. </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card-services rounded-1 d-flex flex-column gap-2 p-4">
+                        <i class="ri-earth-line ri-3x mb-4"></i>
+                        <h4 class="text-primary m-0">Sustainable Design</h4>
+                        <p class="m-0 small">We integrate eco-consicous materials and energy-efficient strategies to
+                            create
+                            spaces that are responsible and resilient. </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card-services rounded-1 d-flex flex-column gap-2 p-4">
+                        <i class="ri-plant-line ri-3x mb-4"></i>
+                        <h4 class="text-primary m-0">Urban & Landscape Planning</h4>
+                        <p class="m-0 small">Large-scale thinking meets human-centered design - building better
+                            communities
+                            through thoughtful planning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Project Tab Section Start -->
-    <div class="section bg-light">
+    <div class="section bg-light work-section">
         <div class="container">
             <div class="row mb-5 pb-5" data-aos="fade-up" data-aos-delay="300">
 
                 <!-- Section Title Start -->
-                <div class="col-xl-3 col-md-6">
+                <div class="align-self-end col-xl-3 col-md-6">
                     <div class="section-title mb-0">
                         <h2 class="title">Latest Works</h2>
                     </div>

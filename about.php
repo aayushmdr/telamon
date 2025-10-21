@@ -207,7 +207,7 @@
         <div class="container">
             <div class="row mb-n10">
                 <div class="col-lg-6 mb-10 col-md-12 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="500">
-                    <div class="history-image">
+                    <div class="">
                         <img class="fit-image" src="<cms:show about_image />" alt="">
                     </div>
                 </div>
