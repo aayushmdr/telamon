@@ -1,9 +1,5 @@
 @charset "UTF-8";
 /*-----------------------------------------------------------------------------------
-
-    Template Name: Gothic - Architechture Bootstrap 5 HTML Template
-    Version: 1.0
-
 -----------------------------------------------------------------------------------
 
     CSS INDEX
@@ -16357,10 +16353,6 @@ ul li {
 /*====================  
     4.2 History CSS
 ====================*/
-.history-image {
-  max-width: 350px;
-  max-height: 650px;
-}
 @media only screen and (max-width: 767px) {
   .history-image {
     max-height: 550px;
@@ -18373,7 +18365,7 @@ ul li {
 ====================*/
 .about-banner-image {
   position: relative;
-  background-image: url(../images/about/large-about.jpg);
+  background-image: url("https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070");
   padding: 500px 0px;
   text-align: center;
   background-attachment: fixed;
@@ -18406,37 +18398,38 @@ ul li {
   align-items: center;
 }
 .about-banner-image .content .title {
+  font-family: "Rubik", sans-serif !important;
   color: #fff;
   font-weight: 600;
-  font-size: 130px;
-  letter-spacing: 50px;
+  font-size: 120px;
+  letter-spacing: 8px;
   text-transform: uppercase;
   text-indent: 50px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about-banner-image .content .title {
-    font-size: 110px;
+    font-size: 100px;
     letter-spacing: 30px;
     text-indent: 30px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-banner-image .content .title {
-    font-size: 100px;
+    font-size: 80px;
     letter-spacing: 10px;
     text-indent: 10px;
   }
 }
 @media only screen and (max-width: 767px) {
   .about-banner-image .content .title {
-    font-size: 80px;
+    font-size: 64px;
     letter-spacing: 5px;
     text-indent: 5px;
   }
 }
 @media only screen and (max-width: 479px) {
   .about-banner-image .content .title {
-    font-size: 60px;
+    font-size: 54px;
     letter-spacing: 0px;
   }
 }
@@ -18531,32 +18524,33 @@ ul li {
   }
 }
 .work-image-bg .content .title {
+  font-family: "Rubik", sans-serif !important;
   position: relative;
   color: #fff;
   font-weight: 600;
   line-height: 1.1em;
   margin-top: 45px;
-  font-size: 110px;
+  font-size: 80px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .work-image-bg .content .title {
-    font-size: 90px;
+    font-size: 80px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .work-image-bg .content .title {
-    font-size: 60px;
+    font-size: 54px;
   }
 }
 @media only screen and (max-width: 767px) {
   .work-image-bg .content .title {
-    font-size: 50px;
+    font-size: 48px;
     margin-top: 30px;
   }
 }
 @media only screen and (max-width: 479px) {
   .work-image-bg .content .title {
-    font-size: 36px;
+    font-size: 32px;
     margin-top: 20px;
     line-height: 1.3;
   }
@@ -18569,6 +18563,7 @@ ul li {
   font-size: 18px;
   margin-top: 50px;
   margin-bottom: 85px;
+  width: 80%;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .work-image-bg .content p {

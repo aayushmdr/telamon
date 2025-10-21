@@ -1,5 +1,12 @@
 <?php require_once( 'couch/cms.php' ); ?>
 
+<cms:template title='About Us Page' clonable='0' icon='info'>
+    <cms:editable name='main_heading' label='Main Heading' type='text' default_value='Default Title' />
+    <cms:editable name='paragraph' label='Description Paragraph' type='textarea' />
+    <cms:editable name='about_image' label='Left Image' type='image' show_preview='1' npreview_height='80' />
+
+</cms:template>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,9 +14,9 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gothic - Architecture Bootstrap 5 HTML Template</title>
+    <title>TDC | About US</title>
     <!-- Favicons -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
 
 
     <!-- Vendor CSS (Icon Font) -->
@@ -33,7 +40,7 @@
 
     <!-- Main Style CSS -->
 
-
+    <link rel="stylesheet" href="assets/css/custom.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
 
@@ -188,7 +195,7 @@
         <div class="container">
             <div class="row">
                 <div class="content" data-aos="fade-up" data-aos-delay="300">
-                    <h1 class="title">Studio</h1>
+                    <h1 class="title"><cms:show main_heading/></h1>
                 </div>
             </div>
         </div>
@@ -201,21 +208,19 @@
             <div class="row mb-n10">
                 <div class="col-lg-6 mb-10 col-md-12 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="500">
                     <div class="history-image">
-                        <img class="fit-image" src="assets/images/history/history-1.png" alt="">
+                        <img class="fit-image" src="<cms:show about_image />" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 mb-10 col-md-12 align-self-center order-1 order-lg-2" data-aos="fade-left" data-aos-delay="500">
                     <div class="history-wrapper">
-                        <h1 class="title">Gothic Studio</h1>
+                        <h1 class="title"><cms:show main_heading/></h1>
                         <div class="history-content">
-                            <h4 class="subtitle">Founded in Lebanon in 1967, Archo Architecture Company (KCC) has grown to become one of the Middle East's leading construction contractors.</h4>
-                            <p>We specialise in complex and prestigious construction and infrastructure projects. Our portfolio includes some of the region’s most iconic landmarks, from super high-rise luxury developments, to five star hotels, hospitals and intricately sophisticated smart buildings. </p>
-                            <p>We have compiled an extensive list of other area clinics and health resources, so that when someone calls.</p>
+                            <h4 class="subtitle"><cms:show paragraph/></h4>
                         </div>
-                        <div class="signature">
+                        <!-- <div class="signature">
                             <img src="assets/images/icon/sign.png" alt="Sign">
-                            <h4 class="title">Daniel JR</h4>
-                        </div>
+                            <h4 class="title">Meeza Manandhar</h4>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -224,13 +229,13 @@
     <!-- History Section End -->
 
     <!-- Services Section Start -->
-    <div class="section section-padding-top bg-light">
+    <div class="section section-padding-top bg-lights mb-5 pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <!-- Section Title Start -->
                     <div class="section-title" data-aos="fade-up" data-aos-delay="300">
-                        <h2 class="title">Why Choose Us</h2>
+                        <h2 class="title">Why Telamon?</h2>
                     </div>
                     <!-- Section Title End -->
                 </div>
@@ -242,12 +247,12 @@
                         <div class="service-block" data-aos="fade-up" data-aos-delay="300">
                             <div class="inner-box">
                                 <h5 class="title">
-                                    <a href="project-details.html.html">profressional and dedicate team</a>
+                                    <a href="project-details.html">End-to-End Solutions</a>
                                 </h5>
-                                <p>Building architectures with modern technology.</p>
+                                <p>From concept to completion, our team handles every detail with craftsmanship and
+                                    care.</p>
                                 <div class="icon-link-bottom">
-                                    <i class="icon icofont-labour"></i>
-                                    <a href="project-details.html.html" class="more">more</a>
+                                    <i class="icon icofont-building-alt"></i>
                                 </div>
                             </div>
                         </div>
@@ -257,12 +262,14 @@
                         <div class="service-block" data-aos="fade-up" data-aos-delay="400">
                             <div class="inner-box">
                                 <h5 class="title">
-                                    <a href="project-details.html.html">unique design</a>
+                                    <a href="project-details.html">Design-Driven Excellence</a>
                                 </h5>
-                                <p>Bring the beautifully for your house. Just enjoy!</p>
+                                <p>We merge architectural creativity with functional precision to deliver designs that
+                                    inspire and endure.
+
+                                </p>
                                 <div class="icon-link-bottom">
                                     <i class="icon icofont-ruler-compass-alt"></i>
-                                    <a href="project-details.html.html" class="more">more</a>
                                 </div>
                             </div>
                         </div>
@@ -272,12 +279,12 @@
                         <div class="service-block" data-aos="fade-up" data-aos-delay="500">
                             <div class="inner-box">
                                 <h5 class="title">
-                                    <a href="project-details.html.html">affordable and flexiable</a>
+                                    <a href="project-details.html">Client-Centered Approach</a>
                                 </h5>
-                                <p>Bring nature in your house. Health is important</p>
+                                <p>We collaborate closely with you, translating your vision into meaningful, practical
+                                    spaces.</p>
                                 <div class="icon-link-bottom">
-                                    <i class="icon icofont-credit-card"></i>
-                                    <a href="project-details.html.html" class="more">more</a>
+                                    <i class="icon icofont-user-suited"></i>
                                 </div>
                             </div>
                         </div>
@@ -287,12 +294,12 @@
                         <div class="service-block" data-aos="fade-up" data-aos-delay="600">
                             <div class="inner-box">
                                 <h5 class="title">
-                                    <a href="project-details.html.html">24/7 support</a>
+                                    <a href="project-details.html">Sustainable Innovations</a>
                                 </h5>
-                                <p>Consulting solutions and make plan to renovation</p>
+                                <p>Our designs embrace sustainability, blending modern technologies with responsible
+                                    building practices.</p>
                                 <div class="icon-link-bottom">
-                                    <i class="icon icofont-live-support"></i>
-                                    <a href="project-details.html.html" class="more">more</a>
+                                    <i class="icon icofont-earth"></i>
                                 </div>
                             </div>
                         </div>
@@ -304,52 +311,16 @@
     </div>
     <!-- Services Section End -->
 
-    <!-- Funfact Section Start -->
-    <div class="section section-padding-bottom bg-light">
-        <div class="container">
-            <div class="funfact-inner-container">
-                <div class="row mb-n8">
-                    <div class="col-sm-4 col-6 mb-8">
-                        <!-- Single Funfact Start -->
-                        <div class="single-funfact" data-aos="fade-up" data-aos-delay="300">
-                            <span class="odometer" data-count-to="8000"></span>
-                            <h6 class="title">Partner <br> worldwide</h6>
-                        </div>
-                        <!-- Single Funfact End -->
-                    </div>
-                    <div class="col-sm-4 col-6 mb-8">
-                        <!-- Single Funfact Start -->
-                        <div class="single-funfact" data-aos="fade-up" data-aos-delay="400">
-                            <span class="odometer" data-count-to="1250"></span>
-                            <h4 class="title">employees and <br> staffs</h4>
-                        </div>
-                        <!-- Single Funfact End -->
-                    </div>
-                    <div class="col-sm-4 col-6 mb-8">
-                        <!-- Single Funfact Start -->
-                        <div class="single-funfact" data-aos="fade-up" data-aos-delay="500">
-                            <span class="odometer" data-count-to="904"></span>
-                            <h5 class="title">project completed <br> on 60 countries</h5>
-                        </div>
-                        <!-- Single Funfact End -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Funfact Section End -->
-
     <!-- Work Section Start -->
     <div class="section work-image-bg">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <h4 class="subtitle" data-aos="fade-up" data-aos-delay="300">how we work</h4>
-                        <h2 class="title" data-aos="fade-up" data-aos-delay="300">Easy &amp; Trusted <br> Progress</h2>
-                        <p data-aos="fade-up" data-aos-delay="300">We understand that you’re hiring us to actually listen, and more <br> importantly, understand your vision, so that your home reflects your spirit and <br> personality, not ours. Above all else, when the project is finished, <br> we want you to  LOVE WHERE YOU LIVE</p>
-                        <a href="#" class="pdf-file" data-aos="fade-up" data-aos-delay="300"><span class="icon icofont-file-pdf"></span>Download Offer [.PDF]</a>
-                        <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image video-box clearfix" data-aos="fade-up" data-aos-delay="300">See How we work<br><span class="fa-play ion ion-ios-play"><i class="ripple "></i></span></a>
+                        <!-- <h4 class="subtitle" data-aos="fade-up" data-aos-delay="300">how we work</h4> -->
+                        <h3 class="title" data-aos="fade-up" data-aos-delay="300">Architecture, <br/> Unfolded Digitally</h3>
+                        <p data-aos="fade-up" data-aos-delay="300">Architecture is more than what you see—it's about the stories, challenges, and choices behind every design. Our YouTube channel opens the door to those conversations. Through vlogs, tutorials, and project features, we aim to educate, spark dialogue, and connect with a global community that shares our passion for thoughtful design.</p>
+                        <a href="https://www.youtube.com/watch?v=trDtTgR0ziA" class="lightbox-image video-box clearfix" data-aos="fade-up" data-aos-delay="300"><br><span class="fa-play ion ion-ios-play"><i class="ripple "></i></span></a>
                     </div>
                 </div>
             </div>
@@ -357,250 +328,6 @@
     </div>
     <!-- Work Section End -->
 
-    <!-- Team Section Start -->
-    <div class="section section-padding bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-
-                    <!-- Section Title Start -->
-                    <div class="section-title" data-aos="fade-up" data-aos-delay="300">
-                        <h2 class="title">Our Team</h2>
-                    </div>
-                    <!-- Section Title End -->
-
-                </div>
-            </div>
-            <div class="row mb-n6">
-                <div class="col-lg-4 col-md-6 col-12 mb-6" data-aos="fade-up" data-aos-delay="300">
-                    <!-- Team Block Start -->
-                    <div class="team-block">
-                        <div class="inner-box">
-
-                            <!-- Team Image Start  -->
-                            <div class="image">
-                                <a href="#"><img src="assets/images/team/team-1.jpg" alt="Team"></a>
-                                <ul class="social-icons">
-                                    <li><a href="#" class="icofont-twitter"></a></li>
-                                    <li><a href="#" class="icofont-facebook"></a></li>
-                                    <li><a href="#" class="icofont-instagram"></a></li>
-                                    <li><a href="#" class="icofont-linkedin"></a></li>
-                                </ul>
-                            </div>
-                            <!-- Team Image End -->
-
-                            <!-- Team Content Start  -->
-                            <div class="team-content">
-                                <h4 class="title"><a href="#">Edward Eric Jr</a></h4>
-                                <h5 class="subtitle">CEO Founder</h5>
-                            </div>
-                            <!-- Team Content End -->
-
-                        </div>
-                    </div>
-                    <!-- Team Block End -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 mb-6" data-aos="fade-up" data-aos-delay="400">
-
-                    <!-- Team Block Start  -->
-                    <div class="team-block">
-                        <div class="inner-box">
-
-                            <!-- Team Image Start  -->
-                            <div class="image">
-                                <a href="#"><img src="assets/images/team/team-2.jpg" alt="Team"></a>
-                                <ul class="social-icons">
-                                    <li><a href="#" class="icofont-twitter"></a></li>
-                                    <li><a href="#" class="icofont-facebook"></a></li>
-                                    <li><a href="#" class="icofont-instagram"></a></li>
-                                    <li><a href="#" class="icofont-linkedin"></a></li>
-                                </ul>
-                            </div>
-                            <!-- Team Image End -->
-
-                            <!-- Team Content Start  -->
-                            <div class="team-content">
-                                <h4 class="title"><a href="#">Tom Holland</a></h4>
-                                <h5 class="subtitle">Architect & Project Management</h5>
-                            </div>
-                            <!-- Team Content End -->
-
-                        </div>
-                    </div>
-                    <!-- Team Block End -->
-
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 mb-6" data-aos="fade-up" data-aos-delay="500">
-
-                    <!-- Team Block Start  -->
-                    <div class="team-block">
-                        <div class="inner-box">
-                            <!-- Team Image Start -->
-                            <div class="image">
-                                <a href="#"><img src="assets/images/team/team-3.jpg" alt="Team"></a>
-                                <ul class="social-icons">
-                                    <li><a href="#" class="icofont-twitter"></a></li>
-                                    <li><a href="#" class="icofont-facebook"></a></li>
-                                    <li><a href="#" class="icofont-instagram"></a></li>
-                                    <li><a href="#" class="icofont-linkedin"></a></li>
-                                </ul>
-                            </div>
-                            <!-- Team Image End -->
-
-                            <!-- Team Content Start  -->
-                            <div class="team-content">
-                                <h4 class="title"><a href="#">Laura Erakovic</a></h4>
-                                <h5 class="subtitle">Executive & Marketing Management</h5>
-                            </div>
-                            <!-- Team Content End -->
-
-                        </div>
-                    </div>
-                    <!-- Team Block End -->
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team Section End -->
-
-    <!-- Client Section Start -->
-    <div class="section section-padding-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 position-relative">
-                    <div class="section-title client-title">
-                        <h2 class="title" data-aos="fade-up" data-aos-delay="300">+2,500 clients love us</h2>
-                    </div>
-                    <div class="client-crousel" data-aos="fade-up" data-aos-delay="400">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-
-                                <div class="swiper-slide">
-                                    <!-- Single Client Start -->
-                                    <div class="single-client-wrapper">
-                                        <!-- Client Thumb Icon Start -->
-                                        <div class="client-thumb-icon">
-                                            <div class="thumb">
-                                                <img src="assets/images/client/1.png" alt="Client Image">
-                                            </div>
-                                            <div class="icon">
-                                                <i class="icofont-quote-right"></i>
-                                            </div>
-                                        </div>
-                                        <!-- Client Thumb Icon End -->
-
-                                        <!-- Client Content Start -->
-                                        <div class="client-content">
-                                            <!-- Name Start -->
-                                            <h6 class="name">
-                                                <a href="#">Ryan Betthalyn</a> / <span> Director at Chobham Manor</span>
-                                            </h6>
-                                            <!-- Name End -->
-                                            <p>Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</p>
-                                        </div>
-                                        <!-- Client Content End -->
-                                    </div>
-                                    <!-- Single Client End -->
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <!-- Single Client Start -->
-                                    <div class="single-client-wrapper">
-                                        <!-- Client Thumb Icon Start -->
-                                        <div class="client-thumb-icon">
-                                            <div class="thumb">
-                                                <img src="assets/images/client/2.png" alt="Client Image">
-                                            </div>
-                                            <div class="icon">
-                                                <i class="icofont-quote-right"></i>
-                                            </div>
-                                        </div>
-                                        <!-- Client Thumb Icon End -->
-
-                                        <!-- Client Content Start -->
-                                        <div class="client-content">
-                                            <!-- Name Start -->
-                                            <h6 class="name">
-                                                <a href="#">Bobs Hanely</a> / <span> Director at Spotify</span>
-                                            </h6>
-                                            <!-- Name End -->
-                                            <p>Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</p>
-                                        </div>
-                                        <!-- Client Content End -->
-                                    </div>
-                                    <!-- Single Client End -->
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <!-- Swiper Pagination Start -->
-                        <div class="swiper-pagination d-none"></div>
-                        <!-- Swiper Pagination End -->
-
-                        <!-- Swiper Navigation Start -->
-                        <div class="client-crousel-prev swiper-button-prev"><i class="icofont-thin-left"></i></div>
-                        <div class="client-crousel-next swiper-button-next"><i class="icofont-thin-right"></i></div>
-                        <!-- Swiper Navigation End -->
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Client Section End -->
-
-    <!-- Brand Logo Start -->
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Brand Logo Wrapper Start -->
-                    <div class="brand-logo-carousel" data-aos="fade-up" data-aos-delay="300">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper align-items-center">
-
-                                <!-- Single Brand Logo Start -->
-                                <div class="swiper-slide single-brand-logo">
-                                    <a href="#"><img src="assets/images/brand-logo/1.png" alt="Brand Logo"></a>
-                                </div>
-                                <!-- Single Brand Logo End -->
-
-                                <!-- Single Brand Logo Start -->
-                                <div class="swiper-slide single-brand-logo">
-                                    <a href="#"><img src="assets/images/brand-logo/2.png" alt="Brand Logo"></a>
-                                </div>
-                                <!-- Single Brand Logo End -->
-
-                                <!-- Single Brand Logo Start -->
-                                <div class="swiper-slide single-brand-logo">
-                                    <a href=""><img src="assets/images/brand-logo/3.png" alt="Brand Logo"></a>
-                                </div>
-                                <!-- Single Brand Logo End -->
-
-                                <!-- Single Brand Logo Start -->
-                                <div class="swiper-slide single-brand-logo">
-                                    <a href="#"><img src="assets/images/brand-logo/4.png" alt="Brand Logo"></a>
-                                </div>
-                                <!-- Single Brand Logo End -->
-
-                                <!-- Single Brand Logo Start -->
-                                <div class="swiper-slide single-brand-logo">
-                                    <a href="#"><img src="assets/images/brand-logo/5.png" alt="Brand Logo"></a>
-                                </div>
-                                <!-- Single Brand Logo End -->
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Brand Logo Wrapper End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Brand Logo End -->
 
     <!-- Main Footer -->
     <footer class="section section-padding-top bg-light overflow-hidden">

@@ -10,8 +10,6 @@
         <cms:editable name='slide_title' label='Slide Header Title' type='text' default_value='Default Title.' />
         <cms:editable name='slide_paragraph' label='Slide Paragraph Text' type='textarea'
             default_value='Contact your administrator to change this.' />
-        <cms:editable name='slide_contact_link' label='Contact Button Link URL' type='text'
-            default_value='contact.html' />
     </cms:repeatable>
 
     <cms:repeatable name='lower_slideshow' label='Lower Content Slideshow Items'>

@@ -3,7 +3,7 @@
 ====================*/
 .about-banner-image {
     position: relative;
-    background-image: url(../images/about/large-about.jpg);
+    background-image: url("https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070");
     padding: 500px 0px;
     text-align: center;
     background-attachment: fixed;
@@ -27,30 +27,31 @@
         align-items: center;
         
         & .title {
+            font-family: "Rubik", sans-serif !important;
             color: $white;
             font-weight: 600;
-            font-size: 130px;
-            letter-spacing: 50px;
+            font-size: 120px;
+            letter-spacing: 8px;
             text-transform: uppercase;
             text-indent: 50px;
 
             @media #{$desktop-device} {
-                font-size: 110px;
+                font-size: 100px;
                 letter-spacing: 30px;
                 text-indent: 30px;
             }
             @media #{$tablet-device} {
-                font-size: 100px;
+                font-size: 80px;
                 letter-spacing: 10px;
                 text-indent: 10px;
             }
             @media #{$large-mobile} {
-                font-size: 80px;
+                font-size: 64px;
                 letter-spacing: 5px;
                 text-indent: 5px;
             }            
             @media #{$extra-small-mobile} {
-                font-size: 60px;
+                font-size: 54px;
                 letter-spacing: 0px;
             }
 
@@ -148,27 +149,28 @@
         }
 
         & .title{
+            font-family: "Rubik", sans-serif !important;
             position: relative;
             color: $white;
             font-weight: 600;
             line-height: 1.1em;
             margin-top: 45px;
-            font-size: 110px;
+            font-size: 80px;
             @media #{$desktop-device} {
-                font-size: 90px;
+                font-size: 80px;
             }
             
             @media #{$tablet-device} {
-                font-size: 60px;
+                font-size: 54px;
             }
 
             @media #{$large-mobile} {
-                font-size: 50px;
+                font-size: 48px;
                 margin-top: 30px;
             }
 
             @media #{$extra-small-mobile} {
-                font-size: 36px;
+                font-size: 32px;
                 margin-top: 20px;
                 line-height: 1.3;
             }
@@ -182,6 +184,7 @@
             font-size: 18px;
             margin-top: 50px;
             margin-bottom: 85px;
+            width: 80%;
             
             @media #{$tablet-device} {
                 font-size: 16px;
