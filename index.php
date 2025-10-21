@@ -19,6 +19,8 @@
         <cms:editable name='lower_slide_tag' label='Slide Tag' type='text' default_value='Default subtitle' />
     </cms:repeatable>
 
+    <cms:editable name='mid_image' label='Mid-section Image' type='image' show_preview='1' preview_height='80' />
+
 </cms:template>
 
 
@@ -394,7 +396,7 @@
             </div>
             <div class="row my-0 my-lg-5 section-padding">
                 <div class="col-lg-6">
-                    <img src="./assets/img/gallery/residence/@bhaisepati/ele02.png" alt=""
+                    <img src="<cms:show mid_image />" alt=""
                         class="img-fluid rounded-1 h-100 object-fit-cover">
                 </div>
                 <div class="col-lg-6">
