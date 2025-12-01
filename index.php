@@ -86,138 +86,8 @@
 
 <body>
     <!-- Header Section Start -->
-    <div class="header header-transparent-bg section-fluid">
-
-        <!-- Header Wrapper Start -->
-        <div class="header-wrapper">
-            <div class="header-sticky">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-
-                        <div class="col-lg-2 col-md-3 col-6">
-                            <!-- Header Logo Start -->
-                            <div class="header-logo">
-                                <a href="index.php">
-                                    <img class="fit-image" src="assets/img/logo/telamon-logo-white.webp"
-                                        alt="Header Logo">
-                                </a>
-                            </div>
-                            <!-- Header Logo End -->
-
-                        </div>
-
-                        <div class="col-lg-8 col-md-7 d-none d-md-block">
-
-                            <!-- Main Menu Language Wrapper Start -->
-                            <div class="main-menu-language-wrapper">
-
-                                <!-- Main Menu Start -->
-                                <nav class="main-menu main-menu-white">
-                                    <ul>
-                                        <li>
-                                            <a class="active" href="index.php">Home</a>
-                                        </li>
-                                        <li>
-                                            <a href="project.php">Gallery</a>
-                                            <!-- <ul class="submenu">
-                                                <li><a href="project.php">Project</a></li>
-                                                <li><a href="project-details.html">Project Details</a></li>
-                                            </ul> -->
-                                        </li>
-                                        <li>
-                                            <a href="about.php">About Us</a>
-                                        </li>
-                                         <li>
-                                            <a href="videos.php">Videos</a>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html">Contact Us</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                                <!-- Main Menu End -->
-
-                            </div>
-
-                        </div>
-
-                        <div class="col-lg-2 col-md-2 col-6">
-
-                            <!-- Mobile Menu Hamburger Start -->
-                            <div class="mobile-menu-hamburger mobile-menu-hamburger-white">
-                                <a href="javascript:void(0)">
-                                    <span>Menu</span>
-                                    <i class="icon ion-android-menu"></i>
-                                </a>
-                            </div>
-                            <!-- Mobile Menu Hamburger End -->
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Header Top End -->
-
-        <!-- Mobile Menu Start -->
-        <div class="mobile-menu-wrapper">
-            <div class="offcanvas-overlay"></div>
-
-            <!-- Mobile Menu Inner Start -->
-            <div class="mobile-menu-inner">
-                <!-- Mobile Menu Inner Top Start -->
-                <div class="mobile-menu-inner-top">
-
-                    <!-- Mobile Menu Logo Start  -->
-                    <div class="logo-mobile">
-                        <img src="assets/img/logo/telamon-logo-blue.png" alt="Logo" class="w-100 img-fluid">
-                    </div>
-                    <!-- Mobile Menu Logo End -->
-
-                    <!-- Button Close Start -->
-                    <div class="offcanvas-btn-close">
-                        <i class="icofont-close-line"></i>
-                    </div>
-                    <!-- Button Close End -->
-
-                </div>
-                <!-- Mobile Menu Inner Top End -->
-
-                <!-- Mobile Menu Start -->
-                <div class="mobile-navigation">
-                    <nav>
-                        <ul class="mobile-menu">
-                            <li class="has-children">
-                                <a href="index.php">Home</a>
-                            </li>
-                            <li class="has-children">
-                                <a href="project.php">Our Works</a>
-                                <!-- <ul class="dropdown">
-                                    <li><a href="project.php">Project</a></li>
-                                    <li><a href="project-details.html">Project Details</a></li>
-                                </ul> -->
-                            </li>
-                            <!-- <li class="has-children">
-                                <a href="#">News <i class="icofont-rounded-down" aria-hidden="true"></i></a>
-                                <ul class="dropdown">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                </ul>
-                            </li> -->
-                            <li><a href="about.php">About</a></li>
-                            <li><a href="videos.php">Videos</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <!-- Mobile Menu End -->
-            </div>
-            <!-- Mobile Menu Inner End -->
-        </div>
-        <!-- Mobile Menu End -->
-
-    </div>
+    <?php $active_page = 'home'; ?>
+    <?php include('partials/header-dark.php'); ?>
     <!-- Header Section End -->
 
     <!-- Hero Section Start -->
@@ -605,7 +475,7 @@
                     <div class="mt-3 mt-lg-5 location-details d-flex flex-column">
                         <div class="detail-item d-flex align-items-center mb-2">
                             <i class="icon icofont-envelope"></i>
-                            <p class="m-0 ms-2">hello@telamondesignconsult.com</p>
+                            <p class="m-0 ms-2">meeza.manandhar@telamondesignconsult.com</p>
                         </div>
                         <div class="detail-item d-flex align-items-center mb-2">
                             <i class="icon icofont-envelope"></i>
@@ -670,50 +540,7 @@
     </div>
 
     <!-- Main Footer -->
-    <footer class="section section-padding-top bg-light overflow-hidden">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <!-- Footer Logo Start -->
-                    <div class="footer-logo mx-auto">
-                        <a href="index.php"><img src="assets/img/logo/telamon-logo-blue.webp" alt="Logo Black"
-                                class="img-fluid" /></a>
-                    </div>
-                    <!-- Footer Logo End -->
-
-                    <!-- Footer Nav Start -->
-                    <ul class="footer-nav mb-n3">
-                        <li class="mb-3"><a href="index.php">Home</a></li>
-                        <li class="mb-3"><a href="project.php">Gallery</a></li>
-                        <li class="mb-3"><a href="about.php">About us</a></li>
-                        <li class="mb-3"><a href="contact.html">Contact us</a></li>
-                    </ul>
-                    <!-- Footer Nav End -->
-
-                    <!-- Contact Info Start -->
-                    <div class="contact-info">24 Daftar Marg<br> Nhusal-23, Kathmandu, Nepal <br> <a
-                            href="tel:+977 9841676764">+977 9841676764</a> <br> <a
-                            href="mailto:telamondesign.info@gmail.com">telamondesign.info@gmail.com</a></div>
-                    <!-- Contact Info End -->
-
-                    <!-- Footer Social Icons Start -->
-                    <ul class="footer-social-icons social-media-link justify-content-center">
-                        <li><a href="https://www.facebook.com/telamon.dc/" class="icofont-facebook"></a></li>
-                        <li><a href="https://www.youtube.com/@TDCinfo" class="icofont-youtube-play"></a></li>
-                        <li><a href="#" class="icofont-instagram"></a></li>
-                        <!-- <li><a href="#" class="icofont-linkedin"></a></li>
-                        <li><a href="#" class="icofont-rss"></a></li>
-                        <li><a href="#" class="icofont-dribbble"></a></li> -->
-                    </ul>
-                    <!-- Footer Social Icons End -->
-
-                    <!-- Copyright Start -->
-                    <div class="copyright">© 2025 <span>Telamon Design Consult</span></div>
-                    <!-- Copyright End -->
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include('partials/footer.php'); ?>
     <!-- End Main Footer -->
 
     <!-- Scroll Top Start -->
