@@ -193,6 +193,30 @@
         </a>
     </div>
 
+<div class="latest-projects container mb-5">
+    <h2 class="section-title">Check out our other projects</h2>
+
+    <div class="row g-3">
+        <cms:pages limit='3' orderby='publish_date' order='desc' exclude=k_page_id>
+        
+            <div class="col-md-4">
+                <div class="project-card">
+                    <img src="<cms:show project_thumbnail />" class="img-fluid mb-3">
+
+                    <h4><cms:show caption /></h4>
+                    <p class="text-muted"><cms:show caption /></p>
+
+                    <a class="btn btn-sm btn-primary" href="<cms:show k_page_link />">
+                        View Project
+                    </a>
+                </div>
+            </div>
+
+        </cms:pages>
+    </div>
+</div>
+
+
     <!-- Main Footer -->
     <?php include('partials/footer.php'); ?>
     <!-- End Main Footer -->
