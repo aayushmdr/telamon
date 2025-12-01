@@ -64,14 +64,14 @@
                     <div class="breadcrumb-wrapper">
                         <!-- Bread Title Start -->
                         <div class="bread-title">
-                            <h1 class="title">The TDC Gallery</h1>
+                            <h1 class="title">Our Projects</h1>
                         </div>
                         <!-- Bread Title End -->
 
                         <!-- Post Meta Start -->
                         <ul class="post-meta">
                             <li><a href="index.php">Home</a></li>
-                            <li>Gallery</li>
+                            <li>Our Projects</li>
                         </ul>
                         <!-- Post Meta End -->
                     </div>

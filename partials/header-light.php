@@ -29,7 +29,7 @@
                                             <a class="<?php echo ($active_page == 'home') ? 'active' : ''; ?>" href="./index.php">Home</a>
                                         </li>
                                         <li>
-                                            <a class="<?php echo ($active_page == 'projects') ? 'active' : ''; ?>" href="./project.php">Gallery</a>
+                                            <a class="<?php echo ($active_page == 'projects') ? 'active' : ''; ?>" href="./project.php">Our Projects</a>
                                         </li>
                                         <li>
                                             <a class="<?php echo ($active_page == 'about') ? 'active' : ''; ?>" href="./about.php">About Us</a>
@@ -102,7 +102,7 @@
                                 <a href="./index.php">Home</a>
                             </li>
                             <li class="has-children">
-                                <a href="./project.php">Gallery</a>
+                                <a href="./project.php">Our Projects</a>
                             </li>
                             <li><a href="./about.php">About</a></li>
                             <li><a href="./videos.php">Videos</a></li>
