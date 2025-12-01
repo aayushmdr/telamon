@@ -4,17 +4,18 @@
                 <div class="col-12 text-center">
                     <!-- Footer Logo Start -->
                     <div class="footer-logo mx-auto">
-                        <a href="index.php"><img src="assets/img/logo/telamon-logo-blue.webp" alt="Logo Black"
+                        <a href="./index.php"><img src="./assets/img/logo/telamon-logo-blue.webp" alt="Logo Black"
                                 class="img-fluid" /></a>
                     </div>
                     <!-- Footer Logo End -->
 
                     <!-- Footer Nav Start -->
                     <ul class="footer-nav mb-n3">
-                        <li class="mb-3"><a href="index.php">Home</a></li>
-                        <li class="mb-3"><a href="project.php">Gallery</a></li>
-                        <li class="mb-3"><a href="about.php">About us</a></li>
-                        <li class="mb-3"><a href="contact.php">Contact us</a></li>
+                        <li class="mb-3"><a href="./index.php">Home</a></li>
+                        <li class="mb-3"><a href="./project.php">Our Projects</a></li>
+                        <li class="mb-3"><a href="./about.php">About us</a></li>
+                        <li class="mb-3"><a href="./contact.php">Contact us</a></li>
+                        <li class="mb-3"><a href="./blogs.php">Blogs</a></li>
                     </ul>
                     <!-- Footer Nav End -->
 
