@@ -1,23 +1,12 @@
 <?php require_once( 'couch/cms.php' ); ?>
 
-<cms:template title='Video Page Content' clonable='0' icon='video'>
-
-    <cms:repeatable name='videos' label='Youtube Videos Links'>
-        <cms:editable name='video_thumb' label='Video Thumbnail' type='image' show_preview='1' preview_height='80' />
-        <cms:editable name='video_title' label='Video Title' type='text' />
-        <cms:editable name='video_date' label='Date' type='datetime' />
-        <cms:editable name='video_link' label='Youtube Link URL' type='text' />
-    </cms:repeatable>
-
-</cms:template>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TDC | Videos</title>
+    <title>TDC | Blogs</title>
     <!-- Favicons -->
     <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
 
@@ -61,28 +50,28 @@
 
 <body>
     <!-- Header Section Start -->
-    <?php $active_page = 'videos'; ?>
+    <?php $active_page = 'blogs'; ?>
     <?php include('partials/header-light.php'); ?>
     <!-- Header Section End -->
 
     <!-- Breadcrumb Section Start -->
-    <div class="section section-margin-sm">
+    <div class="section section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-12" data-aos="fade-up" data-aos-delay="300">
 
                     <!-- breadcrumb Wrapper Start -->
                     <div class="breadcrumb-wrapper">
                         <!-- Bread Title Start -->
                         <div class="bread-title">
-                            <h1 class="title">Our Videos</h1>
+                            <h1 class="title">Blogs</h1>
                         </div>
                         <!-- Bread Title End -->
 
                         <!-- Post Meta Start -->
                         <ul class="post-meta">
                             <li><a href="index.php">Home</a></li>
-                            <li>Videos</li>
+                            <li>Blogs</li>
                         </ul>
                         <!-- Post Meta End -->
                     </div>
@@ -96,27 +85,32 @@
     <!-- Breadcrumb Section End -->
 
     <!-- Project Section Start Here -->
-    <div class="section mb-5">
-        <div class="container mb-5" data-aos="fade-up" data-aos-delay="300">
-            <cms:show_repeatable 'videos'>
-                <div class="border rounded-2 p-5">
-                    <div class="row">
-                    <div class="col-md-3">
-                        <img class="fit-image" src="<cms:show video_thumb />" alt="<cms:show video_title />">
-                    </div>
-                    <div class="col-md-6 align-content-center">
-                        <h3 class="mt-2 mt-md-0"><cms:show video_title /></h3>
-                        <cms:date video_date format='jS M, Y' />
+    <div class="section project-masonry-section">
+        <div class="container">
+            <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1  mesonry-list">
 
-                    </div>
-                    <div class="col-md-3 mt-2 mt-md-0 align-content-center">
-                        <a href="<cms:show video_link />" target="_blank"><button class="btn btn-primary">Watch Now</button></a>
+                <div class="resizer col"></div>
+
+                <!-- Single project Start -->
+                <cms:pages masterpage='blog.php'>
+                    <div class="col <cms:show project_category /> mb-5">
+                    <div class="single-project-wrap">
+                        <div class="project-thumb position-relative m-0">
+                            <a class="image" href="<cms:show k_page_link />">
+                                <img src="<cms:show blog_thumbnail />" alt="<cms:show title />">
+                            </a>
+                        </div>
+                        <div class="inner-content">
+                            <div class="sub-title"><cms:date date format='jS M, y' /></div>
+                            <h4 class="title"><a href="<cms:show k_page_link />"><cms:show title /></a></h4>
+                        </div>
                     </div>
                 </div>
-                </div>
+                </cms:pages>
+                <!-- Single project End -->
 
-                
-            </cms:show_repeatable>
+            </div>
+
         </div>
     </div>
     <!-- project Section End Here -->

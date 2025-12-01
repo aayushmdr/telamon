@@ -15633,6 +15633,11 @@ ul li {
     width: 120px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
+  .header-logo {
+    padding: 24px 0 24px 0;
+  }
+}
 
 /*-- Main Menu & Language style --*/
 .main-menu-language-wrapper {
@@ -15799,6 +15804,11 @@ ul li {
   width: 100%;
   transition: 0.3s;
   background: #324a8f;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
+  .main-menu {
+    display: none;
+  }
 }
 
 .language {
