@@ -8,9 +8,11 @@
         <cms:editable name='slide_subtitle' label='Slide Subtitle' desc='e.g., Residential Design' type='text'
             default_value='Residential Design' />
         <cms:editable name='slide_title' label='Slide Header Title' type='text' default_value='Default Title.' />
-        <cms:editable name='slide_paragraph' label='Slide Paragraph Text' type='textarea'
-            default_value='Contact your administrator to change this.' />
+        <cms:editable name='slide_paragraph' label='Slide Paragraph Text' type='textarea' />
     </cms:repeatable>
+
+    <cms:editable name='intro-heading' label='Mid-Heading' type='text' default_value='Default Title' />
+    <cms:editable name='intro-paragraph' label='Mid-Intro Paragraph' type='textarea'/>
 
     <cms:repeatable name='lower_slideshow' label='Lower Content Slideshow Items'>
         <cms:editable name='lower_slide_image' label='Slide Image' type='image' show_preview='1' preview_height='80'
@@ -19,7 +21,14 @@
         <cms:editable name='lower_slide_tag' label='Slide Tag' type='text' default_value='Default subtitle' />
     </cms:repeatable>
 
+
     <cms:editable name='mid_image' label='Mid-section Image' type='image' show_preview='1' preview_height='80' />
+
+    <cms:editable name='projects' label='Number of Projects' type='text' validator='integer' default_value='25' />
+    <cms:editable name='experience' label='Experience' type='text' validator='integer' default_value='25' />
+    <cms:editable name='satisfaction' label='Client Satisfaction' type='text' validator='integer' default_value='25' />
+    <cms:editable name='commitment' label='Commitment Rate' type='text' validator='integer' default_value='25' />
+
 
 </cms:template>
 
@@ -294,23 +303,13 @@
                 <div class="col-lg-6 mb-10 col-md-12 align-self-center order-1 order-lg-2" data-aos="fade-left"
                     data-aos-delay="500">
                     <div class="history-wrapper">
-                        <h1 class="title">Bold Designs. Seamless Execution.</h1>
+                        <h1 class="title"><cms:show intro-heading /></h1>
                         <div class="history-content">
-                            <h4 class="subtitle">Telamon Design Consult Pvt. Ltd. (TDC) is a private sector company duly
-                                constituted under The Companies Act Nepal offering professional services in the building
-                                sector from
-                                concept to commissioning for building services such as architecture, civil engineering,
-                                community
-                                planning, urban development and project administration .
-                                The office is registered at Newroad, Kathmandu and currently operational from
-                                Jhamshikhel, Lalitpur.
-                                TDC has capable and experienced personals with adequate skills in specialized field and
-                                ensure a
-                                high level of professionalism, while arriving at project solution.</p>
+                            <h4 class="subtitle"><cms:show intro-paragraph /></p>
                         </div>
                         <!-- <div class="signature">
                             <img src="assets/images/icon/sign.png" alt="Sign">
-                            <h4 class="title">Daniel JR</h4>
+                            <h4 class="title">Meeza Mdhr</h4>
                         </div> -->
                     </div>
                 </div>
@@ -326,7 +325,7 @@
                 <div class="col-12">
                     <!-- Section Title Start -->
                     <div class="section-title" data-aos="fade-up" data-aos-delay="300">
-                        <h2 class="title">Why Telamon?</h2>
+                        <h2 class="title">Why TDC?</h2>
                     </div>
                     <!-- Section Title End -->
                 </div>
@@ -408,7 +407,7 @@
                         <div class="col-sm-6 mt-sm-0">
                             <div class="custom-card-metrics rounded-1 d-flex flex-column gap-2 p-3">
                                 <p class="text-uppercase fs-6 m-0">Projects</p>
-                                <h1 class="display-5 m-0"><count-up lazy="lazy">25</count-up>+</h1>
+                                <h1 class="display-5 m-0"><count-up lazy="lazy"><cms:show projects /></count-up>+</h1>
                                 <p class="text-black-50 small m-0">successfully delivered across residential, commercial
                                     and
                                     urban
@@ -419,7 +418,7 @@
                         <div class="col-sm-6 mt-sm-0">
                             <div class="custom-card-metrics rounded-1 d-flex flex-column gap-2 p-3">
                                 <p class="text-uppercase fs-6 m-0">Years of Experience</p>
-                                <h1 class="display-5 m-0"><count-up lazy="lazy">8</count-up>+</h1>
+                                <h1 class="display-5 m-0"><count-up lazy="lazy"><cms:show experience /></count-up>+</h1>
                                 <p class="text-black-50 small m-0">shaping spaces with purpose, creativity and
                                     precision.
                                 </p>
@@ -429,7 +428,7 @@
                         <div class="col-sm-6 mt-sm-0">
                             <div class="custom-card-metrics rounded-1 d-flex flex-column gap-2 p-3">
                                 <p class="text-uppercase fs-6 m-0">Client Satisfaction</p>
-                                <h1 class="display-5 m-0"><count-up lazy="lazy">100</count-up>%</h1>
+                                <h1 class="display-5 m-0"><count-up lazy="lazy"><cms:show satisfaction /></count-up>%</h1>
                                 <p class="text-black-50 small m-0">measured through post-project feedback and repeat
                                     clients.</p>
 
@@ -438,7 +437,7 @@
                         <div class="col-sm-6 mt-sm-0">
                             <div class="custom-card-metrics rounded-1 d-flex flex-column gap-2 p-3">
                                 <p class="text-uppercase fs-6 m-0">Commitment</p>
-                                <h1 class="display-5 m-0"><count-up lazy="lazy">110</count-up>%</h1>
+                                <h1 class="display-5 m-0"><count-up lazy="lazy"><cms:show commitment /></count-up>%</h1>
                                 <p class="text-black-50 small m-0">commitment to quality, innovation and detail in every
                                     project we
                                     undertake.</p>
