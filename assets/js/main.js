@@ -67,6 +67,9 @@
         effect: 'slide',
 		pagination: true,
 		navigation: true,
+		autoplay: {
+		delay: 4000,
+		},
 
 
         // Navigation arrows
@@ -92,7 +95,6 @@
 		effect: 'slide',
 		pagination: true,
 		navigation: true,
-
 
 		// Navigation arrows
 		navigation: {
