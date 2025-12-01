@@ -42,17 +42,9 @@
     />
     
     <cms:editable 
-        name='project_start_date' 
-        label='Start Date' 
-        type='datetime' 
-        default_value='2024-01-01'
-    />
-    
-    <cms:editable 
-        name='project_end_date' 
-        label='End Date' 
-        type='datetime' 
-        default_value='2024-12-31'
+        name='area' 
+        label='Area' 
+        type='text' 
     />
 
     <cms:editable 
@@ -152,8 +144,7 @@
                             <ul>
                                 <li><span>Location</span><cms:show project_location /></li>
                                 <li><span>Client</span><cms:show project_client /></li>
-                                <li><span>Start Date</span><cms:date project_start_date format='jS M, y' /></li>
-                                <li><span>End Date</span><cms:date project_end_date format='jS M, y' /></li>
+                                <li><span>Area</span><cms:show area /></li>
                                 <li><span>Type</span><cms:show project_category /></li>
                             </ul>
                         </div>
